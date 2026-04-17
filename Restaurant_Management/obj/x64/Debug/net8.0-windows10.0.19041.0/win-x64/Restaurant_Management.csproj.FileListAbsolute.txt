@@ -1,312 +1,426 @@
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.exe
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.deps.json
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.runtimeconfig.json
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.pdb
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Graphics.Imaging.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.ContentSafety.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Foundation.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Imaging.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Text.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Security.Authentication.OAuth.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppLifecycle.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppNotifications.Builder.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppNotifications.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Background.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.BadgeNotifications.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Foundation.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Management.Deployment.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Media.Capture.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.PushNotifications.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Security.AccessControl.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Storage.Pickers.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Storage.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.System.Power.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.System.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.InteractiveExperiences.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.ML.OnnxRuntime.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.MachineLearning.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Widgets.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WinUI.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Tensors.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WebView2Loader.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.CSharp.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.VisualBasic.Core.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.VisualBasic.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Win32.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Win32.Registry.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.AppContext.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Buffers.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.Concurrent.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.Immutable.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.NonGeneric.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.Specialized.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.Annotations.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.DataAnnotations.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.EventBasedAsync.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.TypeConverter.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Configuration.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Console.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Core.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Data.Common.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Data.DataSetExtensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Data.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Contracts.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Debug.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.DiagnosticSource.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.FileVersionInfo.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Process.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.StackTrace.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Tools.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.TraceSource.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Tracing.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Drawing.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Drawing.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Dynamic.Runtime.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Formats.Asn1.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Formats.Tar.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Globalization.Calendars.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Globalization.Extensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Globalization.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.Brotli.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.FileSystem.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.ZipFile.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.AccessControl.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.DriveInfo.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.Watcher.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.IsolatedStorage.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.MemoryMappedFiles.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipes.AccessControl.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipes.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.UnmanagedMemoryStream.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.Expressions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.Parallel.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.Queryable.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Memory.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Http.Json.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Http.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.HttpListener.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Mail.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.NameResolution.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.NetworkInformation.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Ping.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Quic.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Requests.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Security.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.ServicePoint.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Sockets.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebClient.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebHeaderCollection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebProxy.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebSockets.Client.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebSockets.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Vectors.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ObjectModel.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.CoreLib.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.DataContractSerialization.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.Uri.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.Xml.Linq.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.Xml.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.DispatchProxy.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.ILGeneration.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.Lightweight.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Extensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Metadata.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.TypeExtensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Resources.Reader.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Resources.ResourceManager.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Resources.Writer.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Extensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Handles.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Intrinsics.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Loader.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Numerics.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Formatters.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Json.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Xml.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.AccessControl.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Claims.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Algorithms.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Cng.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Csp.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Encoding.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.OpenSsl.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Primitives.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.X509Certificates.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Principal.Windows.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Principal.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.SecureString.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ServiceModel.Web.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ServiceProcess.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.CodePages.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.Extensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encodings.Web.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Json.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.RegularExpressions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Channels.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Overlapped.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Dataflow.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Extensions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Parallel.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Thread.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.ThreadPool.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Timer.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Transactions.Local.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Transactions.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ValueTuple.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Web.HttpUtility.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Web.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Windows.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.Linq.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.ReaderWriter.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.Serialization.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XDocument.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XPath.XDocument.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XPath.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XmlDocument.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XmlSerializer.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WindowsBase.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscorlib.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\netstandard.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.Native.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\clretwrc.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\clrgc.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\clrjit.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\coreclr.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\createdump.exe
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\hostfxr.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\hostpolicy.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordaccore.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_8.0.2526.11203.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordbi.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscorrc.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\msquic.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.SDK.NET.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WinRT.Runtime.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.Projection.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.csproj.AssemblyReference.cache
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XamlTypeInfo.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XamlSaveStateFile.xml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.GeneratedMSBuildEditorConfig.editorconfig
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.AssemblyInfoInputs.cache
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.AssemblyInfo.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.csproj.CoreCompileInputs.cache
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaura.86D4BEAA.Up2Date
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\refint\Restaurant_Management.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.pdb
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.genruntimeconfig.cache
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ref\Restaurant_Management.dll
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\priconfig.xml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\priconfig.xml.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\unfiltered.layout.resfiles
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\unfiltered.layout.resfiles.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\filtered.layout.resfiles
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\filtered.layout.resfiles.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\excluded.layout.resfiles
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\excluded.layout.resfiles.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.resfiles
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.resfiles.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pri.resfiles
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pri.resfiles.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\qualifiers.txt
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\qualifiers.txt.intermediate
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MultipleQualifiersPerDimensionFound.txt
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ProjectArchitectures.txt
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\.winmd_cache\$Microsoft.Web.WebView2.Core.winmd_638789222360000000.json
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.g.i.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.g.cs
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xaml
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.xbf
-F:\Bag pl code blocks\Restaurant_Management\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.exe
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.deps.json
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.runtimeconfig.json
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.pdb
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Graphics.Imaging.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.ContentSafety.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Foundation.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Imaging.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.Text.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Security.Authentication.OAuth.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppLifecycle.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AppNotifications.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Background.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.BadgeNotifications.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Foundation.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Management.Deployment.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Media.Capture.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.PushNotifications.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Security.AccessControl.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Storage.Pickers.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Storage.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.System.Power.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.System.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.InteractiveExperiences.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.ML.OnnxRuntime.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.MachineLearning.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Widgets.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WinUI.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Tensors.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WebView2Loader.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.CSharp.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.VisualBasic.Core.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.VisualBasic.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Win32.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Win32.Registry.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.AppContext.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Buffers.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.Concurrent.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.Immutable.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.NonGeneric.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.Specialized.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Collections.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.Annotations.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.DataAnnotations.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.EventBasedAsync.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.TypeConverter.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ComponentModel.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Configuration.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Console.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Core.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Data.Common.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Data.DataSetExtensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Data.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Contracts.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Debug.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.DiagnosticSource.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.FileVersionInfo.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Process.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.StackTrace.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Tools.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.TraceSource.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.Tracing.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Drawing.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Drawing.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Dynamic.Runtime.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Formats.Asn1.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Formats.Tar.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Globalization.Calendars.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Globalization.Extensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Globalization.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.Brotli.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.FileSystem.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.ZipFile.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.AccessControl.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.DriveInfo.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.Watcher.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.FileSystem.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.IsolatedStorage.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.MemoryMappedFiles.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipes.AccessControl.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipes.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.UnmanagedMemoryStream.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.Expressions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.Parallel.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.Queryable.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Linq.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Memory.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Http.Json.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Http.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.HttpListener.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Mail.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.NameResolution.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.NetworkInformation.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Ping.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Quic.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Requests.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Security.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.ServicePoint.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.Sockets.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebClient.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebHeaderCollection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebProxy.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebSockets.Client.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.WebSockets.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Net.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Vectors.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ObjectModel.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.CoreLib.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.DataContractSerialization.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.Uri.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.Xml.Linq.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Private.Xml.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.DispatchProxy.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.ILGeneration.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.Lightweight.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Emit.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Extensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Metadata.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.TypeExtensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Reflection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Resources.Reader.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Resources.ResourceManager.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Resources.Writer.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Extensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Handles.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.InteropServices.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Intrinsics.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Loader.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Numerics.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Formatters.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Json.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.Xml.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.Serialization.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Runtime.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.AccessControl.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Claims.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Algorithms.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Cng.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Csp.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Encoding.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.OpenSsl.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.X509Certificates.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Principal.Windows.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Principal.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.SecureString.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ServiceModel.Web.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ServiceProcess.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.CodePages.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.Extensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encoding.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encodings.Web.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Json.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.RegularExpressions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Channels.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Overlapped.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Dataflow.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Extensions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.Parallel.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Tasks.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Thread.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.ThreadPool.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.Timer.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Threading.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Transactions.Local.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Transactions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.ValueTuple.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Web.HttpUtility.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Web.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Windows.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.Linq.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.ReaderWriter.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.Serialization.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XDocument.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XPath.XDocument.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XPath.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XmlDocument.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.XmlSerializer.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Xml.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WindowsBase.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscorlib.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\netstandard.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Compression.Native.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\clretwrc.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\clrgc.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\clrjit.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\coreclr.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\createdump.exe
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\hostfxr.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\hostpolicy.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordaccore.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordbi.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscorrc.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\msquic.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.SDK.NET.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\WinRT.Runtime.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Web.WebView2.Core.Projection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.csproj.AssemblyReference.cache
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XamlTypeInfo.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\MenuManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\OrderManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\ShoppingListPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\StockManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\TableManagementPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XamlSaveStateFile.xml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.GeneratedMSBuildEditorConfig.editorconfig
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.AssemblyInfoInputs.cache
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.AssemblyInfo.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.csproj.CoreCompileInputs.cache
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.sourcelink.json
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaura.86D4BEAA.Up2Date
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\refint\Restaurant_Management.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.pdb
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.genruntimeconfig.cache
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ref\Restaurant_Management.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\priconfig.xml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\priconfig.xml.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\unfiltered.layout.resfiles
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\unfiltered.layout.resfiles.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\filtered.layout.resfiles
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\filtered.layout.resfiles.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\excluded.layout.resfiles
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\excluded.layout.resfiles.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.resfiles
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.resfiles.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pri.resfiles
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pri.resfiles.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\qualifiers.txt
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\qualifiers.txt.intermediate
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MultipleQualifiersPerDimensionFound.txt
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ProjectArchitectures.txt
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\.winmd_cache\$Microsoft.Web.WebView2.Core.winmd_638789222360000000.json
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Humanizer.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.CodeAnalysis.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.CodeAnalysis.CSharp.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Data.SqlClient.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.EntityFrameworkCore.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.EntityFrameworkCore.Design.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Caching.Memory.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.DependencyModel.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Logging.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Options.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Extensions.Primitives.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.IdentityModel.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.IdentityModel.Logging.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.IdentityModel.Protocols.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.IdentityModel.Tokens.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.SqlServer.Server.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Mono.TextTemplating.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Composition.AttributedModel.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Composition.Convention.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Composition.Hosting.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Composition.Runtime.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Composition.TypedParts.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IdentityModel.Tokens.Jwt.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipelines.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\de\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\es\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\it\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Data.SqlClient.SNI.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.CodeDom.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Configuration.ConfigurationManager.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.EventLog.Messages.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Diagnostics.EventLog.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.Pkcs.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Security.Cryptography.ProtectedData.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.genpublishdeps.cache
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Bcl.Cryptography.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Data.SqlClient.Internal.Logging.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\de\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\es\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\it\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_8.0.2626.16921.dll

@@ -1,20 +1,8 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
+using Restaurant_Management.Data;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
 
 namespace Restaurant_Management.Views
 {
@@ -25,21 +13,83 @@ namespace Restaurant_Management.Views
             this.InitializeComponent();
         }
 
-        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+           
+
             string username = UsernameTextBox.Text.Trim();
             string password = PasswordBox.Password.Trim();
 
-            // Date temporare pentru test
-            if (username == "admin" && password == "admin123")
+            if (username == "" || password == "")
             {
-                ErrorTextBlock.Text = string.Empty;
-                MainWindow.Instance.AppFrame.Navigate(typeof(AdminHomePage));
+                ErrorTextBlock.Text = "Completeaza username si parola!";
+                return;
             }
-            else
+
+            ErrorTextBlock.Text = "";
+
+            try
             {
-                ErrorTextBlock.Text = "Nume utilizator sau parola incorecta.";
+                SqlConnection conn = DbHelper.GetConnection();
+                conn.Open();
+
+                string query = "SELECT FullName, Role FROM Users WHERE Username = @user AND Password = @pass";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@user", username);
+                cmd.Parameters.AddWithValue("@pass", password);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    string role = reader["Role"].ToString().Trim();
+                    string fullName = reader["FullName"].ToString().Trim();
+
+                    reader.Close();
+                    conn.Close();
+
+                    if (role == "Manager")
+                    {
+                        Frame.Navigate(typeof(AdminHomePage));
+                    }
+                    else if (role == "Ospatar")
+                    {
+                        await ShowDialog("Bun venit!", "Logat ca ospatar: " + fullName);
+                    }
+                    else if (role == "Bucatar")
+                    {
+                        await ShowDialog("Bun venit!", "Logat ca bucatar: " + fullName);
+                    }
+                    else
+                    {
+                        ErrorTextBlock.Text = "Rol necunoscut.";
+                    }
+                }
+                else
+                {
+                    reader.Close();
+                    conn.Close();
+                    ErrorTextBlock.Text = "Username sau parola incorecta.";
+                }
             }
+            catch (Exception ex)
+            {
+                await ShowDialog("Eroare", ex.Message);
+            }
+        }
+
+        private async System.Threading.Tasks.Task ShowDialog(string title, string content)
+        {
+            ContentDialog dialog = new ContentDialog
+            {
+                Title = title,
+                Content = content,
+                CloseButtonText = "OK",
+                XamlRoot = this.XamlRoot
+            };
+
+            await dialog.ShowAsync();
         }
     }
 }
