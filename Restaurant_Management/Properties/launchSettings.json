@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Restaurant_Management (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Restaurant_Management (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

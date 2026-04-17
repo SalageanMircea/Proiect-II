@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="Restaurant_Management.Views.ShoppingListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="Black">
+
+    <StackPanel Padding="30" Spacing="20">
+        <TextBlock Text="Lista de Cumparaturi / Aprovizionare" FontSize="30" FontWeight="Bold"/>
+        <TextBlock Text="Aici vei putea gestiona necesarul pentru aprovizionare." FontSize="18"/>
+
+        <Button x:ConnectionId='2' Content="Inapoi" Width="120"                         />
+    </StackPanel>
+</Page>
+

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="Views\DashboardPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EmployeeSchedulePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ShoppingListPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StockManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\OrderManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TableManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MenuManagementPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AdminHomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

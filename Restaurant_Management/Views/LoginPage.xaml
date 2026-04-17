@@ -1,0 +1,75 @@
+<Page
+    x:Class="Restaurant_Management.Views.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#B19149">
+    
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border
+            Width="420"
+            Padding="30"
+            CornerRadius="20"
+            Background="Black"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+
+            <StackPanel Spacing="18">
+                <Image Source="ms-appx:///Assets/Logo.png"
+       Width="100"
+       Height="100"
+       HorizontalAlignment="Center"/>
+                
+                <TextBlock
+                    Text="Restaurant Manager"
+                    FontSize="30"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"/>
+
+                <TextBlock
+                    Text="Autentificare administrator"
+                    FontSize="18"
+                    Foreground="Gray"
+                    HorizontalAlignment="Center"/>
+
+                <TextBox
+                    x:Name="UsernameTextBox"
+                    Header="Nume utilizator"
+                    PlaceholderText="Introdu username-ul"/>
+
+                <PasswordBox
+                    x:Name="PasswordBox"
+                    Header="Parola"
+                    PlaceholderText="Introdu parola"/>
+
+                <TextBlock
+                    x:Name="ErrorTextBlock"
+                    Text=""
+                    Foreground="Red"
+                    TextWrapping="Wrap"/>
+
+                <Button
+                    Content="Logare"
+                    Height="45"
+                    CornerRadius="10"
+                    HorizontalAlignment="Center"
+                    Click="LoginButton_Click"/>
+
+                <TextBlock
+                    Text="Acces permis doar administratorului"
+                    HorizontalAlignment="Center"
+                    Foreground="DarkGray"
+                    FontStyle="Italic"/>
+                
+                
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

@@ -1,0 +1,11 @@
+App.xbf
+MainWindow.xbf
+Views\AdminHomePage.xbf
+Views\DashboardPage.xbf
+Views\EmployeeSchedulePage.xbf
+Views\LoginPage.xbf
+Views\MenuManagementPage.xbf
+Views\OrderManagementPage.xbf
+Views\ShoppingListPage.xbf
+Views\StockManagementPage.xbf
+Views\TableManagementPage.xbf
