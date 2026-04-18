@@ -424,3 +424,13 @@ D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\ne
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\mscordaccore_amd64_amd64_8.0.2626.16921.dll
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\Waiterpage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\Waiterpage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\Waiterpage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\Waiterpage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\Waiterpage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.xbf

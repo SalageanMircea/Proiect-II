@@ -15,8 +15,6 @@ namespace Restaurant_Management.Views
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-           
-
             string username = UsernameTextBox.Text.Trim();
             string password = PasswordBox.Password.Trim();
 
@@ -55,11 +53,21 @@ namespace Restaurant_Management.Views
                     }
                     else if (role == "Ospatar")
                     {
-                        await ShowDialog("Bun venit!", "Logat ca ospatar: " + fullName);
+                        
+                        Frame.Navigate(typeof(WaiterPage));
+                        if (Frame.Content is WaiterPage waiterPage)
+                        {
+                            waiterPage.Initialize(fullName);
+                        }
                     }
                     else if (role == "Bucatar")
                     {
-                        await ShowDialog("Bun venit!", "Logat ca bucatar: " + fullName);
+                       
+                        Frame.Navigate(typeof(KitchenChefPage));
+                        if (Frame.Content is KitchenChefPage chefPage)
+                        {
+                            chefPage.Initialize(fullName);
+                        }
                     }
                     else
                     {
