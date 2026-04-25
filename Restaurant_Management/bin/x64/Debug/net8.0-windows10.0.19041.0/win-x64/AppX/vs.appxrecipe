@@ -28,21 +28,21 @@
     <AppXManifest Include="D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-04-25T14:14:16.474</Modified>
+      <Modified>2026-04-25T14:28:14.942</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.runtimeconfig.json">
       <PackagePath>Restaurant_Management.runtimeconfig.json</PackagePath>
-      <Modified>2026-04-25T14:00:21.167</Modified>
+      <Modified>2026-04-25T14:28:14.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>Restaurant_Management.exe</PackagePath>
-      <Modified>2026-04-25T14:14:16.055</Modified>
+      <Modified>2026-04-25T14:28:13.942</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.dll">
       <PackagePath>Restaurant_Management.dll</PackagePath>
-      <Modified>2026-04-25T14:14:16.050</Modified>
+      <Modified>2026-04-25T14:28:13.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salag\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.26\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1102,7 +1102,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Restaurant_Management.deps.json">
       <PackagePath>Restaurant_Management.deps.json</PackagePath>
-      <Modified>2026-04-25T14:01:28.103</Modified>
+      <Modified>2026-04-25T14:28:14.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\salag\.nuget\packages\humanizer.core\2.14.1\lib\net6.0\Humanizer.dll">
       <PackagePath>Humanizer.dll</PackagePath>
@@ -1414,7 +1414,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-04-25T14:01:27.862</Modified>
+      <Modified>2026-04-25T14:28:14.470</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -12,7 +12,7 @@ namespace Restaurant_Management.Views
     {
         ObservableCollection<MenuProduct> menuItems = new ObservableCollection<MenuProduct>();
 
-        int selectedMenuId = 0;
+        int selectedId = 0;
 
         public MenuManagementPage()
         {
@@ -20,10 +20,10 @@ namespace Restaurant_Management.Views
 
             MenuListView.ItemsSource = menuItems;
 
-            LoadMenuItems();
+            LoadMenu();
         }
 
-        private void LoadMenuItems()
+        private void LoadMenu()
         {
             menuItems.Clear();
 
@@ -32,23 +32,22 @@ namespace Restaurant_Management.Views
                 SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string query = "SELECT MenuId, Name, Category, Price, IsAvailable FROM MenuItems ORDER BY Category, Name";
+                string sql = "SELECT MenuId, Name, Category, Price, IsAvailable FROM MenuItems ORDER BY MenuId DESC";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
-
+                SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    MenuProduct item = new MenuProduct();
+                    MenuProduct p = new MenuProduct();
 
-                    item.MenuId = Convert.ToInt32(reader["MenuId"]);
-                    item.Name = reader["Name"].ToString();
-                    item.Category = reader["Category"].ToString();
-                    item.Price = Convert.ToDecimal(reader["Price"]);
-                    item.IsAvailable = Convert.ToBoolean(reader["IsAvailable"]);
+                    p.MenuId = Convert.ToInt32(reader["MenuId"]);
+                    p.Name = reader["Name"].ToString();
+                    p.Category = reader["Category"].ToString();
+                    p.Price = Convert.ToDecimal(reader["Price"]);
+                    p.IsAvailable = Convert.ToBoolean(reader["IsAvailable"]);
 
-                    menuItems.Add(item);
+                    menuItems.Add(p);
                 }
 
                 reader.Close();
@@ -64,22 +63,31 @@ namespace Restaurant_Management.Views
         {
             string name = NameBox.Text.Trim();
             string category = CategoryBox.Text.Trim();
+            string priceText = PriceBox.Text.Trim();
 
             if (name == "")
             {
-                await ShowDialog("Validare", "Introdu numele produsului.");
+                await ShowDialog("Eroare", "Scrie numele produsului.");
                 return;
             }
+
+            if (priceText == "")
+            {
+                await ShowDialog("Eroare", "Scrie pretul produsului.");
+                return;
+            }
+
+            priceText = priceText.Replace(",", ".");
 
             decimal price;
 
-            if (!TryParsePrice(PriceBox.Text, out price))
+            if (!decimal.TryParse(priceText, NumberStyles.Any, CultureInfo.InvariantCulture, out price))
             {
-                await ShowDialog("Validare", "Introdu un pret valid. Exemplu: 32.50");
+                await ShowDialog("Eroare", "Pretul nu este corect.");
                 return;
             }
 
-            bool isAvailable = AvailableCheckBox.IsChecked == true;
+            bool available = AvailableCheckBox.IsChecked == true;
 
             try
             {
@@ -88,39 +96,31 @@ namespace Restaurant_Management.Views
 
                 SqlCommand cmd;
 
-                if (selectedMenuId == 0)
+                if (selectedId == 0)
                 {
-                    string query = @"INSERT INTO MenuItems
-                                     (Name, Category, Price, IsAvailable)
-                                     VALUES
-                                     (@name, @category, @price, @available)";
+                    string sql = "INSERT INTO MenuItems (Name, Category, Price, IsAvailable) VALUES (@name, @category, @price, @available)";
 
-                    cmd = new SqlCommand(query, conn);
+                    cmd = new SqlCommand(sql, conn);
                 }
                 else
                 {
-                    string query = @"UPDATE MenuItems
-                                     SET Name = @name,
-                                         Category = @category,
-                                         Price = @price,
-                                         IsAvailable = @available
-                                     WHERE MenuId = @id";
+                    string sql = "UPDATE MenuItems SET Name=@name, Category=@category, Price=@price, IsAvailable=@available WHERE MenuId=@id";
 
-                    cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@id", selectedMenuId);
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", selectedId);
                 }
 
                 cmd.Parameters.AddWithValue("@name", name);
                 cmd.Parameters.AddWithValue("@category", category);
                 cmd.Parameters.AddWithValue("@price", price);
-                cmd.Parameters.AddWithValue("@available", isAvailable);
+                cmd.Parameters.AddWithValue("@available", available);
 
                 cmd.ExecuteNonQuery();
 
                 conn.Close();
 
                 ClearForm();
-                LoadMenuItems();
+                LoadMenu();
 
                 await ShowDialog("Succes", "Produsul a fost salvat.");
             }
@@ -137,17 +137,17 @@ namespace Restaurant_Management.Views
             if (btn == null)
                 return;
 
-            MenuProduct item = btn.DataContext as MenuProduct;
+            MenuProduct p = btn.DataContext as MenuProduct;
 
-            if (item == null)
+            if (p == null)
                 return;
 
-            selectedMenuId = item.MenuId;
+            selectedId = p.MenuId;
 
-            NameBox.Text = item.Name;
-            CategoryBox.Text = item.Category;
-            PriceBox.Text = item.Price.ToString("0.00", CultureInfo.InvariantCulture);
-            AvailableCheckBox.IsChecked = item.IsAvailable;
+            NameBox.Text = p.Name;
+            CategoryBox.Text = p.Category;
+            PriceBox.Text = p.Price.ToString("0.00", CultureInfo.InvariantCulture);
+            AvailableCheckBox.IsChecked = p.IsAvailable;
 
             SaveButton.Content = "Actualizeaza";
         }
@@ -159,21 +159,9 @@ namespace Restaurant_Management.Views
             if (btn == null)
                 return;
 
-            MenuProduct item = btn.DataContext as MenuProduct;
+            MenuProduct p = btn.DataContext as MenuProduct;
 
-            if (item == null)
-                return;
-
-            ContentDialog confirmDialog = new ContentDialog();
-            confirmDialog.Title = "Confirmare";
-            confirmDialog.Content = "Sigur vrei sa stergi produsul: " + item.Name + "?";
-            confirmDialog.PrimaryButtonText = "Sterge";
-            confirmDialog.CloseButtonText = "Anuleaza";
-            confirmDialog.XamlRoot = this.XamlRoot;
-
-            ContentDialogResult result = await confirmDialog.ShowAsync();
-
-            if (result != ContentDialogResult.Primary)
+            if (p == null)
                 return;
 
             try
@@ -181,17 +169,17 @@ namespace Restaurant_Management.Views
                 SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string query = "DELETE FROM MenuItems WHERE MenuId = @id";
+                string sql = "DELETE FROM MenuItems WHERE MenuId=@id";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", item.MenuId);
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", p.MenuId);
 
                 cmd.ExecuteNonQuery();
 
                 conn.Close();
 
                 ClearForm();
-                LoadMenuItems();
+                LoadMenu();
 
                 await ShowDialog("Succes", "Produsul a fost sters.");
             }
@@ -208,7 +196,7 @@ namespace Restaurant_Management.Views
 
         private void ClearForm()
         {
-            selectedMenuId = 0;
+            selectedId = 0;
 
             NameBox.Text = "";
             CategoryBox.Text = "";
@@ -216,19 +204,6 @@ namespace Restaurant_Management.Views
             AvailableCheckBox.IsChecked = true;
 
             SaveButton.Content = "Salveaza";
-        }
-
-        private bool TryParsePrice(string text, out decimal price)
-        {
-            text = text.Trim();
-            text = text.Replace(",", ".");
-
-            return decimal.TryParse(
-                text,
-                NumberStyles.Any,
-                CultureInfo.InvariantCulture,
-                out price
-            );
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
@@ -244,12 +219,12 @@ namespace Restaurant_Management.Views
             await ShowDialog("Eroare", message);
         }
 
-        private async System.Threading.Tasks.Task ShowDialog(string title, string content)
+        private async System.Threading.Tasks.Task ShowDialog(string title, string message)
         {
             ContentDialog dialog = new ContentDialog();
 
             dialog.Title = title;
-            dialog.Content = content;
+            dialog.Content = message;
             dialog.CloseButtonText = "OK";
             dialog.XamlRoot = this.XamlRoot;
 
@@ -281,10 +256,14 @@ namespace Restaurant_Management.Views
         {
             get
             {
-                if (IsAvailable)
+                if (IsAvailable == true)
+                {
                     return "Disponibil";
-
-                return "Indisponibil";
+                }
+                else
+                {
+                    return "Indisponibil";
+                }
             }
         }
     }

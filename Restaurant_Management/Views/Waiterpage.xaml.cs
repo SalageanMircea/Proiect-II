@@ -13,15 +13,15 @@ namespace Restaurant_Management.Views
     {
         string waiterName = "";
 
-        ObservableCollection<WaiterOrderItem> orders = new ObservableCollection<WaiterOrderItem>();
         ObservableCollection<WaiterMenuItem> menuItems = new ObservableCollection<WaiterMenuItem>();
+        ObservableCollection<WaiterOrderItem> orders = new ObservableCollection<WaiterOrderItem>();
 
         public WaiterPage()
         {
             this.InitializeComponent();
 
-            OrdersListView.ItemsSource = orders;
             MenuListView.ItemsSource = menuItems;
+            OrdersListView.ItemsSource = orders;
         }
 
         public void Initialize(string name)
@@ -29,11 +29,11 @@ namespace Restaurant_Management.Views
             waiterName = name;
             WelcomeText.Text = "Bun venit, " + name + "!";
 
-            LoadMenuItems();
+            LoadMenu();
             LoadOrders();
         }
 
-        private void LoadMenuItems()
+        private void LoadMenu()
         {
             menuItems.Clear();
 
@@ -42,12 +42,9 @@ namespace Restaurant_Management.Views
                 SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string query = @"SELECT MenuId, Name, Category, Price, IsAvailable
-                                 FROM MenuItems
-                                 WHERE IsAvailable = 1
-                                 ORDER BY Category, Name";
+                string sql = "SELECT MenuId, Name, Category, Price, IsAvailable FROM MenuItems WHERE IsAvailable=1 ORDER BY Category, Name";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlCommand cmd = new SqlCommand(sql, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
@@ -82,27 +79,24 @@ namespace Restaurant_Management.Views
                 SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string query = @"SELECT OrderId, TableNumber, Details, Status, SentAt
-                                 FROM Orders
-                                 WHERE WaiterName = @waiter
-                                 ORDER BY SentAt DESC";
+                string sql = "SELECT OrderId, TableNumber, Details, Status, SentAt FROM Orders WHERE WaiterName=@waiter ORDER BY SentAt DESC";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@waiter", waiterName);
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    WaiterOrderItem item = new WaiterOrderItem();
+                    WaiterOrderItem order = new WaiterOrderItem();
 
-                    item.OrderId = Convert.ToInt32(reader["OrderId"]);
-                    item.TableNumber = Convert.ToInt32(reader["TableNumber"]);
-                    item.Details = reader["Details"].ToString();
-                    item.Status = reader["Status"].ToString();
-                    item.SentAt = Convert.ToDateTime(reader["SentAt"]).ToString("dd/MM/yyyy HH:mm");
+                    order.OrderId = Convert.ToInt32(reader["OrderId"]);
+                    order.TableNumber = Convert.ToInt32(reader["TableNumber"]);
+                    order.Details = reader["Details"].ToString();
+                    order.Status = reader["Status"].ToString();
+                    order.SentAt = Convert.ToDateTime(reader["SentAt"]).ToString("dd/MM/yyyy HH:mm");
 
-                    orders.Add(item);
+                    orders.Add(order);
                 }
 
                 reader.Close();
@@ -129,19 +123,21 @@ namespace Restaurant_Management.Views
             int quantity = Convert.ToInt32(item.Quantity);
 
             if (quantity < 1)
+            {
                 quantity = 1;
+            }
 
-            decimal totalPrice = quantity * item.Price;
+            decimal total = quantity * item.Price;
 
-            string selectedProduct = quantity + "x " + item.Name + " (" + totalPrice.ToString("0.00") + " lei)";
+            string text = quantity + "x " + item.Name + " (" + total.ToString("0.00") + " lei)";
 
             if (OrderTextBox.Text.Trim() == "")
             {
-                OrderTextBox.Text = selectedProduct;
+                OrderTextBox.Text = text;
             }
             else
             {
-                OrderTextBox.Text = OrderTextBox.Text.Trim() + ", " + selectedProduct;
+                OrderTextBox.Text = OrderTextBox.Text.Trim() + ", " + text;
             }
         }
 
@@ -152,7 +148,7 @@ namespace Restaurant_Management.Views
 
             if (details == "")
             {
-                await ShowDialog("Validare", "Selecteaza mancare din meniu.");
+                await ShowDialog("Eroare", "Selecteaza produse din meniu.");
                 return;
             }
 
@@ -161,17 +157,14 @@ namespace Restaurant_Management.Views
                 SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string query = @"INSERT INTO Orders
-                                 (TableNumber, Details, Status, WaiterName, SentAt)
-                                 VALUES
-                                 (@table, @details, 'Received', @waiter, @sentAt)";
+                string sql = "INSERT INTO Orders (TableNumber, Details, Status, WaiterName, SentAt) VALUES (@table, @details, 'Received', @waiter, @date)";
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@table", tableNumber);
                 cmd.Parameters.AddWithValue("@details", details);
                 cmd.Parameters.AddWithValue("@waiter", waiterName);
-                cmd.Parameters.AddWithValue("@sentAt", DateTime.Now);
+                cmd.Parameters.AddWithValue("@date", DateTime.Now);
 
                 cmd.ExecuteNonQuery();
 
@@ -181,7 +174,7 @@ namespace Restaurant_Management.Views
 
                 LoadOrders();
 
-                await ShowDialog("Comanda trimisa", "Comanda pentru masa " + tableNumber + " a fost trimisa la bucatar.");
+                await ShowDialog("Succes", "Comanda a fost trimisa la bucatar.");
             }
             catch (Exception ex)
             {
@@ -196,7 +189,7 @@ namespace Restaurant_Management.Views
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
-            LoadMenuItems();
+            LoadMenu();
             LoadOrders();
         }
 
@@ -210,12 +203,12 @@ namespace Restaurant_Management.Views
             await ShowDialog("Eroare", message);
         }
 
-        private async System.Threading.Tasks.Task ShowDialog(string title, string content)
+        private async System.Threading.Tasks.Task ShowDialog(string title, string message)
         {
             ContentDialog dialog = new ContentDialog();
 
             dialog.Title = title;
-            dialog.Content = content;
+            dialog.Content = message;
             dialog.CloseButtonText = "OK";
             dialog.XamlRoot = this.XamlRoot;
 
@@ -256,26 +249,35 @@ namespace Restaurant_Management.Views
 
         public string SentAt { get; set; }
 
-        private string _status;
+        private string status;
 
         public string Status
         {
             get
             {
-                return _status;
+                return status;
             }
+
             set
             {
-                _status = value;
+                status = value;
 
-                if (value == "Received")
+                if (status == "Received")
+                {
                     StatusColor = new SolidColorBrush(Color.FromArgb(255, 59, 130, 246));
-                else if (value == "Preparing")
+                }
+                else if (status == "Preparing")
+                {
                     StatusColor = new SolidColorBrush(Color.FromArgb(255, 234, 179, 8));
-                else if (value == "Done")
+                }
+                else if (status == "Done")
+                {
                     StatusColor = new SolidColorBrush(Color.FromArgb(255, 34, 197, 94));
+                }
                 else
+                {
                     StatusColor = new SolidColorBrush(Color.FromArgb(255, 107, 114, 128));
+                }
             }
         }
 

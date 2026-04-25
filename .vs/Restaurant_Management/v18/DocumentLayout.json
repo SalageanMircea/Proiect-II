@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\data\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\data\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\waiterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\views\\waiterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\kitchenchefpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\views\\kitchenchefpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\menumanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\views\\menumanagementpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\kitchenchefpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\views\\kitchenchefpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\waiterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\views\\waiterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\data\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\data\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\kitchenchefpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|solutionrelative:restaurant_management\\views\\kitchenchefpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE4F7874-D129-40F9-8B28-AD76D614383C}|Restaurant_Management\\Restaurant_Management.csproj|d:\\faculta\\an3_sem2\\ii\\proiect\\proiect-ii\\restaurant_management\\views\\waiterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -50,37 +50,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "DbHelper.cs",
               "DocumentMoniker": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Data\\DbHelper.cs",
               "RelativeDocumentMoniker": "Restaurant_Management\\Data\\DbHelper.cs",
               "ToolTip": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Data\\DbHelper.cs",
               "RelativeToolTip": "Restaurant_Management\\Data\\DbHelper.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAgwEYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T14:02:52.662Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MenuManagementPage.xaml.cs",
               "DocumentMoniker": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\MenuManagementPage.xaml.cs",
               "RelativeDocumentMoniker": "Restaurant_Management\\Views\\MenuManagementPage.xaml.cs",
               "ToolTip": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\MenuManagementPage.xaml.cs",
               "RelativeToolTip": "Restaurant_Management\\Views\\MenuManagementPage.xaml.cs",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAUwA8BAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAAwA0BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-25T13:36:28.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T13:36:28.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MenuManagementPage.xaml",
               "DocumentMoniker": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\MenuManagementPage.xaml",
               "RelativeDocumentMoniker": "Restaurant_Management\\Views\\MenuManagementPage.xaml",
@@ -88,21 +87,19 @@
               "RelativeToolTip": "Restaurant_Management\\Views\\MenuManagementPage.xaml",
               "ViewState": "AgIAAEIAAAAAAAAAAAAowMMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-25T13:11:54.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-25T13:11:54.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Waiterpage.xaml.cs",
               "DocumentMoniker": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\Waiterpage.xaml.cs",
               "RelativeDocumentMoniker": "Restaurant_Management\\Views\\Waiterpage.xaml.cs",
               "ToolTip": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\Waiterpage.xaml.cs",
               "RelativeToolTip": "Restaurant_Management\\Views\\Waiterpage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAP0AAAAAAAAAAAA5wB0BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T21:07:03.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T21:07:03.092Z"
             },
             {
               "$type": "Document",
@@ -114,12 +111,11 @@
               "RelativeToolTip": "Restaurant_Management\\Views\\Waiterpage.xaml",
               "ViewState": "AgIAAAQBAAAAAAAAAAAowCQBAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-18T21:04:32.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T21:04:32.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "KitchenChefPage.xaml",
               "DocumentMoniker": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\KitchenChefPage.xaml",
               "RelativeDocumentMoniker": "Restaurant_Management\\Views\\KitchenChefPage.xaml",
@@ -127,21 +123,19 @@
               "RelativeToolTip": "Restaurant_Management\\Views\\KitchenChefPage.xaml",
               "ViewState": "AgIAALEAAAAAAAAAAAAowLgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-18T20:51:21.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T20:51:21.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "KitchenChefPage.xaml.cs",
               "DocumentMoniker": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\KitchenChefPage.xaml.cs",
               "RelativeDocumentMoniker": "Restaurant_Management\\Views\\KitchenChefPage.xaml.cs",
               "ToolTip": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Views\\KitchenChefPage.xaml.cs",
               "RelativeToolTip": "Restaurant_Management\\Views\\KitchenChefPage.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAzwKcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAqwPUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T20:48:48.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T20:48:48.761Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "Restaurant_Management\\Views\\LoginPage.xaml.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAlwDYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T19:45:37.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T19:45:37.694Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "Restaurant_Management\\Views\\LoginPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-17T19:44:36.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T19:44:36.73Z"
             },
             {
               "$type": "Document",
@@ -179,8 +171,7 @@
               "RelativeToolTip": "Restaurant_Management\\MainWindow.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-17T18:48:21.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T18:48:21.847Z"
             }
           ]
         }
