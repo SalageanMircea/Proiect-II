@@ -2,10 +2,6 @@
     x:Class="Restaurant_Management.Views.KitchenChefPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Restaurant_Management.Views"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid Padding="30">
@@ -21,41 +17,89 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
+
             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                <TextBlock Text="👨‍🍳 Kitchen Chef Panel" FontSize="28" FontWeight="Bold" VerticalAlignment="Center"/>
-                <TextBlock x:Name="WelcomeText" FontSize="16" Foreground="Gray"
-                           VerticalAlignment="Center" Margin="20,0,0,0"/>
+                <TextBlock Text="👨‍🍳 Kitchen Chef Panel"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           VerticalAlignment="Center"/>
+
+                <TextBlock x:Name="WelcomeText"
+                           FontSize="16"
+                           Foreground="Gray"
+                           VerticalAlignment="Center"
+                           Margin="20,0,0,0"/>
             </StackPanel>
+
             <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
-                <Button Content="🔄 Refresh" Click="RefreshButton_Click" VerticalAlignment="Center"/>
-                <Button Content="Logout" Click="LogoutButton_Click" VerticalAlignment="Center"/>
+                <Button Content="🔄 Refresh"
+                        Click="RefreshButton_Click"/>
+
+                <Button Content="Logout"
+                        Click="LogoutButton_Click"/>
             </StackPanel>
         </Grid>
 
-        <!-- Status Filter -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="10" Margin="0,0,0,16">
-            <TextBlock Text="Filter:" VerticalAlignment="Center" FontWeight="SemiBold"/>
-            <RadioButton x:Name="FilterAll" Content="All" IsChecked="True" Click="Filter_Click" GroupName="StatusFilter"/>
-            <RadioButton x:Name="FilterReceived" Content="Received" Click="Filter_Click" GroupName="StatusFilter"/>
-            <RadioButton x:Name="FilterPreparing" Content="Preparing" Click="Filter_Click" GroupName="StatusFilter"/>
-            <RadioButton x:Name="FilterDone" Content="Done" Click="Filter_Click" GroupName="StatusFilter"/>
+        <!-- Filters -->
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    Spacing="10"
+                    Margin="0,0,0,16">
+
+            <TextBlock Text="Filter:"
+                       VerticalAlignment="Center"
+                       FontWeight="SemiBold"/>
+
+            <RadioButton x:Name="FilterAll"
+                         Content="All"
+                         IsChecked="True"
+                         Click="Filter_Click"
+                         GroupName="StatusFilter"/>
+
+            <RadioButton x:Name="FilterReceived"
+                         Content="Received"
+                         Click="Filter_Click"
+                         GroupName="StatusFilter"/>
+
+            <RadioButton x:Name="FilterPreparing"
+                         Content="Preparing"
+                         Click="Filter_Click"
+                         GroupName="StatusFilter"/>
+
+            <RadioButton x:Name="FilterDone"
+                         Content="Done"
+                         Click="Filter_Click"
+                         GroupName="StatusFilter"/>
         </StackPanel>
 
-        <!-- Orders List -->
-        <Border Grid.Row="2" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
-                CornerRadius="8" Padding="20"
-                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1">
+        <!-- Orders -->
+        <Border Grid.Row="2"
+                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="8"
+                Padding="20">
+
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Text="Incoming Orders" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,12"/>
+                <TextBlock Grid.Row="0"
+                           Text="Incoming Orders"
+                           FontSize="18"
+                           FontWeight="SemiBold"
+                           Margin="0,0,0,12"/>
 
-                <ListView Grid.Row="1" x:Name="OrdersListView" SelectionMode="None">
+                <ListView Grid.Row="1"
+                          x:Name="OrdersListView"
+                          SelectionMode="None">
+
                     <ListView.Header>
-                        <Grid Padding="12,8" Background="{ThemeResource SubtleFillColorSecondaryBrush}">
+                        <Grid Padding="12,8"
+                              Background="{ThemeResource SubtleFillColorSecondaryBrush}">
+
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="80"/>
                                 <ColumnDefinition Width="80"/>
@@ -63,53 +107,100 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="130"/>
                                 <ColumnDefinition Width="160"/>
-                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="230"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" Text="Order ID" FontWeight="SemiBold" FontSize="13"/>
-                            <TextBlock Grid.Column="1" Text="Table" FontWeight="SemiBold" FontSize="13"/>
-                            <TextBlock Grid.Column="2" Text="Waiter" FontWeight="SemiBold" FontSize="13"/>
-                            <TextBlock Grid.Column="3" Text="Details" FontWeight="SemiBold" FontSize="13"/>
-                            <TextBlock Grid.Column="4" Text="Status" FontWeight="SemiBold" FontSize="13"/>
-                            <TextBlock Grid.Column="5" Text="Sent At" FontWeight="SemiBold" FontSize="13"/>
-                            <TextBlock Grid.Column="6" Text="Update Status" FontWeight="SemiBold" FontSize="13"/>
+
+                            <TextBlock Grid.Column="0" Text="Order ID" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="1" Text="Table" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="2" Text="Waiter" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="3" Text="Details" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="4" Text="Status" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="5" Text="Sent At" FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="6" Text="Update Status" FontWeight="SemiBold"/>
                         </Grid>
                     </ListView.Header>
+
                     <ListView.ItemTemplate>
-                        <DataTemplate x:DataType="local:ChefOrderItem">
-                            <Grid Padding="12,10" BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}" BorderThickness="0,0,0,1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="80"/>
-                                    <ColumnDefinition Width="80"/>
-                                    <ColumnDefinition Width="120"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="130"/>
-                                    <ColumnDefinition Width="160"/>
-                                    <ColumnDefinition Width="200"/>
-                                </Grid.ColumnDefinitions>
+                        <DataTemplate>
+                            <Border BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}"
+                                    BorderThickness="0,0,0,1"
+                                    Padding="12,10">
 
-                                <TextBlock Grid.Column="0" Text="{x:Bind OrderId}" VerticalAlignment="Center"/>
-                                <TextBlock Grid.Column="1" Text="{x:Bind TableNumber}" VerticalAlignment="Center"/>
-                                <TextBlock Grid.Column="2" Text="{x:Bind WaiterName}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
-                                <TextBlock Grid.Column="3" Text="{x:Bind Details}" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="130"/>
+                                        <ColumnDefinition Width="160"/>
+                                        <ColumnDefinition Width="230"/>
+                                    </Grid.ColumnDefinitions>
 
-                                <Border Grid.Column="4" CornerRadius="12" Padding="10,4"
-                                        Background="{x:Bind StatusColor}" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                    <TextBlock Text="{x:Bind Status}" FontSize="12" FontWeight="SemiBold" Foreground="White"/>
-                                </Border>
+                                    <TextBlock Grid.Column="0"
+                                               Text="{Binding OrderId}"
+                                               VerticalAlignment="Center"/>
 
-                                <TextBlock Grid.Column="5" Text="{x:Bind SentAt}" FontSize="12" Foreground="Gray" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding TableNumber}"
+                                               VerticalAlignment="Center"/>
 
-                                <!-- Status Buttons -->
-                                <StackPanel Grid.Column="6" Orientation="Horizontal" Spacing="6" VerticalAlignment="Center">
-                                    <Button Content="Received" Tag="{x:Bind OrderId}"
-                                            Click="SetReceived_Click" FontSize="11" Padding="8,4"/>
-                                    <Button Content="Preparing" Tag="{x:Bind OrderId}"
-                                            Click="SetPreparing_Click" FontSize="11" Padding="8,4"/>
-                                    <Button Content="Done" Tag="{x:Bind OrderId}"
-                                            Click="SetDone_Click" FontSize="11" Padding="8,4"
-                                            Style="{StaticResource AccentButtonStyle}"/>
-                                </StackPanel>
-                            </Grid>
+                                    <TextBlock Grid.Column="2"
+                                               Text="{Binding WaiterName}"
+                                               TextTrimming="CharacterEllipsis"
+                                               VerticalAlignment="Center"/>
+
+                                    <TextBlock Grid.Column="3"
+                                               Text="{Binding Details}"
+                                               TextWrapping="Wrap"
+                                               VerticalAlignment="Center"
+                                               Margin="0,0,10,0"/>
+
+                                    <Border Grid.Column="4"
+                                            CornerRadius="12"
+                                            Padding="10,4"
+                                            Background="{Binding StatusColor}"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center">
+
+                                        <TextBlock Text="{Binding Status}"
+                                                   FontSize="12"
+                                                   FontWeight="SemiBold"
+                                                   Foreground="White"/>
+                                    </Border>
+
+                                    <TextBlock Grid.Column="5"
+                                               Text="{Binding SentAt}"
+                                               FontSize="12"
+                                               Foreground="Gray"
+                                               VerticalAlignment="Center"/>
+
+                                    <StackPanel Grid.Column="6"
+                                                Orientation="Horizontal"
+                                                Spacing="6"
+                                                VerticalAlignment="Center">
+
+                                        <Button Content="Received"
+                                                Tag="{Binding OrderId}"
+                                                Click="SetReceived_Click"
+                                                FontSize="11"
+                                                Padding="8,4"/>
+
+                                        <Button Content="Preparing"
+                                                Tag="{Binding OrderId}"
+                                                Click="SetPreparing_Click"
+                                                FontSize="11"
+                                                Padding="8,4"/>
+
+                                        <Button Content="Done"
+                                                Tag="{Binding OrderId}"
+                                                Click="SetDone_Click"
+                                                FontSize="11"
+                                                Padding="8,4"
+                                                Style="{StaticResource AccentButtonStyle}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
