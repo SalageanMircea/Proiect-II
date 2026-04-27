@@ -3,180 +3,72 @@ using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Restaurant_Management.Data;
+using Restaurant_Management.Repositories.Interfaces;            /// for the IDbConnectionFactory interface
+using Restaurant_Management.Repositories.Implementations;       /// for the LocalDbConnectionFactory class
 using System;
 using System.Collections.ObjectModel;
 using Windows.UI;
+using Restaurant_Management.Services.Implementations;
+using Restaurant_Management.ViewModels;
 
 namespace Restaurant_Management.Views
 {
     public sealed partial class KitchenChefPage : Page
     {
-        string chefName = "";
-
-        ObservableCollection<ChefOrderItem> allOrders = new ObservableCollection<ChefOrderItem>();
-        ObservableCollection<ChefOrderItem> visibleOrders = new ObservableCollection<ChefOrderItem>();
+        private KitchenChefViewModel _viewModel;
 
         public KitchenChefPage()
         {
             this.InitializeComponent();
-
-            OrdersListView.ItemsSource = visibleOrders;
         }
-
-        public void Initialize(string name)
+        public void Initialize(string name, IDbConnectionFactory connectionFactory)
         {
-            chefName = name;
+            _viewModel = new KitchenChefViewModel(
+                new OrderService(
+                    new OrderRepository(connectionFactory)
+                )
+            );
+
+            _viewModel.Initialize(name);
             WelcomeText.Text = "Bun venit, " + name + "!";
-
-            LoadOrders();
-        }
-
-        private void LoadOrders()
-        {
-            allOrders.Clear();
-
-            try
-            {
-                SqlConnection conn = DbHelper.GetConnection();
-                conn.Open();
-
-                string sql = "SELECT OrderId, TableNumber, WaiterName, Details, Status, SentAt FROM Orders ORDER BY SentAt DESC";
-
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    ChefOrderItem order = new ChefOrderItem();
-
-                    order.OrderId = Convert.ToInt32(reader["OrderId"]);
-                    order.TableNumber = Convert.ToInt32(reader["TableNumber"]);
-                    order.WaiterName = reader["WaiterName"].ToString();
-                    order.Details = reader["Details"].ToString();
-                    order.Status = reader["Status"].ToString();
-                    order.SentAt = Convert.ToDateTime(reader["SentAt"]).ToString("dd/MM/yyyy HH:mm");
-
-                    allOrders.Add(order);
-                }
-
-                reader.Close();
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                ShowError(ex.Message);
-            }
-
-            ApplyFilter();
-        }
-
-        private void ApplyFilter()
-        {
-            visibleOrders.Clear();
-
-            string filter = "";
-
-            if (FilterReceived.IsChecked == true)
-            {
-                filter = "Received";
-            }
-            else if (FilterPreparing.IsChecked == true)
-            {
-                filter = "Preparing";
-            }
-            else if (FilterDone.IsChecked == true)
-            {
-                filter = "Done";
-            }
-
-            for (int i = 0; i < allOrders.Count; i++)
-            {
-                ChefOrderItem order = allOrders[i];
-
-                if (filter == "")
-                {
-                    visibleOrders.Add(order);
-                }
-                else
-                {
-                    if (order.Status == filter)
-                    {
-                        visibleOrders.Add(order);
-                    }
-                }
-            }
+            OrdersListView.ItemsSource = _viewModel.VisibleOrders;
         }
 
         private void Filter_Click(object sender, RoutedEventArgs e)
         {
-            ApplyFilter();
+            string filter = "";
+
+            if (FilterReceived.IsChecked == true) filter = "Received";
+            else if (FilterPreparing.IsChecked == true) filter = "Preparing";
+            else if (FilterDone.IsChecked == true) filter = "Done";
+
+            _viewModel.ApplyFilter(filter);
         }
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
-            LoadOrders();
+            _viewModel.LoadOrders();
         }
 
         private void SetReceived_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
-
-            if (btn == null)
-                return;
-
-            int id = Convert.ToInt32(btn.Tag);
-
-            UpdateStatus(id, "Received");
+            if (btn == null) return;
+            _viewModel.UpdateOrderStatus(Convert.ToInt32(btn.Tag), "Received");
         }
 
         private void SetPreparing_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
-
-            if (btn == null)
-                return;
-
-            int id = Convert.ToInt32(btn.Tag);
-
-            UpdateStatus(id, "Preparing");
+            if (btn == null) return;
+            _viewModel.UpdateOrderStatus(Convert.ToInt32(btn.Tag), "Preparing");
         }
 
         private void SetDone_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
-
-            if (btn == null)
-                return;
-
-            int id = Convert.ToInt32(btn.Tag);
-
-            UpdateStatus(id, "Done");
-        }
-
-        private void UpdateStatus(int orderId, string newStatus)
-        {
-            try
-            {
-                SqlConnection conn = DbHelper.GetConnection();
-                conn.Open();
-
-                string sql = "UPDATE Orders SET Status=@status WHERE OrderId=@id";
-
-                SqlCommand cmd = new SqlCommand(sql, conn);
-
-                cmd.Parameters.AddWithValue("@status", newStatus);
-                cmd.Parameters.AddWithValue("@id", orderId);
-
-                cmd.ExecuteNonQuery();
-
-                conn.Close();
-
-                LoadOrders();
-            }
-            catch (Exception ex)
-            {
-                ShowError(ex.Message);
-            }
+            if (btn == null) return;
+            _viewModel.UpdateOrderStatus(Convert.ToInt32(btn.Tag), "Done");
         }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
@@ -187,60 +79,11 @@ namespace Restaurant_Management.Views
         private async void ShowError(string message)
         {
             ContentDialog dialog = new ContentDialog();
-
             dialog.Title = "Eroare";
             dialog.Content = message;
             dialog.CloseButtonText = "OK";
             dialog.XamlRoot = this.XamlRoot;
-
             await dialog.ShowAsync();
         }
-    }
-
-    public class ChefOrderItem
-    {
-        public int OrderId { get; set; }
-
-        public int TableNumber { get; set; }
-
-        public string WaiterName { get; set; }
-
-        public string Details { get; set; }
-
-        public string SentAt { get; set; }
-
-        private string status;
-
-        public string Status
-        {
-            get
-            {
-                return status;
-            }
-
-            set
-            {
-                status = value;
-
-                if (status == "Received")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 59, 130, 246));
-                }
-                else if (status == "Preparing")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 234, 179, 8));
-                }
-                else if (status == "Done")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 34, 197, 94));
-                }
-                else
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 107, 114, 128));
-                }
-            }
-        }
-
-        public SolidColorBrush StatusColor { get; set; }
     }
 }

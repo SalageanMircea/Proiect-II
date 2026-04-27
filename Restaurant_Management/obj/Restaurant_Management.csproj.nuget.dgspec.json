@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {}
+    "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Second_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {}
   },
   "projects": {
-    "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {
+    "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Second_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
+        "projectUniqueName": "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Second_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
         "projectName": "Restaurant_Management",
-        "projectPath": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
-        "packagesPath": "C:\\Users\\salag\\.nuget\\packages\\",
-        "outputPath": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\obj\\",
+        "projectPath": "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Second_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
+        "packagesPath": "C:\\Users\\Laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Second_try\\Proiect-II\\Restaurant_Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio\\Shared components tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\salag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

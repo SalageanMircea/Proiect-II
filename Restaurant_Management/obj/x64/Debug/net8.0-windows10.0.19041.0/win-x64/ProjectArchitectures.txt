@@ -1,1 +1,1 @@
-D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\Restaurant_Management.csproj;x64
+D:\AC_UTCN\AN_3\SEM2\II - Informatica Industriala\Proiect\Code\Second_try\Proiect-II\Restaurant_Management\Restaurant_Management.csproj;x64

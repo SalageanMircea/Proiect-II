@@ -2,6 +2,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Restaurant_Management.Data;
+using Restaurant_Management.Repositories.Implementations;
 using System;
 
 namespace Restaurant_Management.Views
@@ -66,7 +67,9 @@ namespace Restaurant_Management.Views
                         Frame.Navigate(typeof(KitchenChefPage));
                         if (Frame.Content is KitchenChefPage chefPage)
                         {
-                            chefPage.Initialize(fullName);
+
+                            //here I just inserted the LocalDB instance but it's not correctly implemented, just for testing purposes
+                            chefPage.Initialize(fullName, new LocalDbConnectionFactory());
                         }
                     }
                     else
