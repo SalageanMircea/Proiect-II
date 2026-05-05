@@ -2,9 +2,106 @@
     x:Class="Restaurant_Management.Views.MenuManagementPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#0F172A">
 
-    <Grid Padding="30">
+    <Page.Resources>
+        <SolidColorBrush x:Key="CardBackgroundBrush" Color="#111827"/>
+        <SolidColorBrush x:Key="CardBorderBrush" Color="#334155"/>
+        <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#1E293B"/>
+        <SolidColorBrush x:Key="PrimaryTextBrush" Color="#F8FAFC"/>
+        <SolidColorBrush x:Key="SecondaryTextBrush" Color="#CBD5E1"/>
+        <SolidColorBrush x:Key="MutedTextBrush" Color="#94A3B8"/>
+        <SolidColorBrush x:Key="InputBackgroundBrush" Color="#0F172A"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#2563EB"/>
+        <SolidColorBrush x:Key="SecondaryButtonBrush" Color="#334155"/>
+        <SolidColorBrush x:Key="DangerButtonBrush" Color="#DC2626"/>
+        <SolidColorBrush x:Key="EditButtonBrush" Color="#CA8A04"/>
+
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBackgroundBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="20"/>
+        </Style>
+
+        <Style x:Key="PageTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="PageSubtitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="{StaticResource SecondaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="LabelStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="{StaticResource MutedTextBrush}"/>
+            <Setter Property="Margin" Value="0,0,0,4"/>
+        </Style>
+
+        <Style x:Key="InputStyle" TargetType="TextBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="{StaticResource InputBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="PlaceholderForeground" Value="{StaticResource MutedTextBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource AccentBrush}"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource SecondaryButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="Padding" Value="12,8"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="EditButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource EditButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource EditButtonBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="DeleteButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource DangerButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource DangerButtonBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="TableHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="TableTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Padding="24">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -12,24 +109,21 @@
         </Grid.RowDefinitions>
 
         <!-- Header -->
-        <StackPanel Grid.Row="0" Spacing="8" Margin="0,0,0,25">
-            <TextBlock Text="Gestionarea Meniului"
-                       FontSize="30"
-                       FontWeight="Bold"/>
+        <StackPanel Grid.Row="0" Spacing="8" Margin="0,0,0,24">
+            <TextBlock
+                Text="Gestionarea Meniului"
+                Style="{StaticResource PageTitleStyle}"/>
 
-            <TextBlock Text="Aici managerul poate adauga, edita si sterge produsele din meniu."
-                       FontSize="18"
-                       Foreground="Gray"/>
+            <TextBlock
+                Text="Aici managerul poate adauga, edita si sterge produsele din meniu."
+                Style="{StaticResource PageSubtitleStyle}"/>
         </StackPanel>
 
-        <!-- Add / Edit Form -->
-        <Border Grid.Row="1"
-                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
-                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-                BorderThickness="1"
-                CornerRadius="8"
-                Padding="20"
-                Margin="0,0,0,20">
+        <!-- Form -->
+        <Border
+            Grid.Row="1"
+            Style="{StaticResource CardStyle}"
+            Margin="0,0,0,20">
 
             <Grid ColumnSpacing="12">
                 <Grid.ColumnDefinitions>
@@ -43,129 +137,119 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Column="0">
-                    <TextBlock Text="Nume produs"
-                               FontSize="12"
-                               Foreground="Gray"
-                               Margin="0,0,0,4"/>
+                    <TextBlock
+                        Text="Nume produs"
+                        Style="{StaticResource LabelStyle}"/>
 
-                    <TextBox x:ConnectionId='12' x:Name="NameBox"
-                             PlaceholderText="Ex: Pizza Margherita"/>
+                    <TextBox x:ConnectionId='12'
+                        x:Name="NameBox"
+                        PlaceholderText="Ex: Pizza Margherita"
+                        Style="{StaticResource InputStyle}"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
-                    <TextBlock Text="Categorie"
-                               FontSize="12"
-                               Foreground="Gray"
-                               Margin="0,0,0,4"/>
+                    <TextBlock
+                        Text="Categorie"
+                        Style="{StaticResource LabelStyle}"/>
 
-                    <TextBox x:ConnectionId='11' x:Name="CategoryBox"
-                             PlaceholderText="Ex: Pizza"/>
+                    <TextBox x:ConnectionId='11'
+                        x:Name="CategoryBox"
+                        PlaceholderText="Ex: Pizza"
+                        Style="{StaticResource InputStyle}"/>
                 </StackPanel>
 
                 <StackPanel Grid.Column="2">
-                    <TextBlock Text="Pret"
-                               FontSize="12"
-                               Foreground="Gray"
-                               Margin="0,0,0,4"/>
+                    <TextBlock
+                        Text="Pret"
+                        Style="{StaticResource LabelStyle}"/>
 
-                    <TextBox x:ConnectionId='10' x:Name="PriceBox"
-                             PlaceholderText="Ex: 32.00"/>
+                    <TextBox x:ConnectionId='10'
+                        x:Name="PriceBox"
+                        PlaceholderText="Ex: 32.00"
+                        Style="{StaticResource InputStyle}"/>
                 </StackPanel>
 
-                <CheckBox x:ConnectionId='6' Grid.Column="3"
-                          x:Name="AvailableCheckBox"
-                          Content="Disponibil"
-                          IsChecked="True"
-                          VerticalAlignment="Bottom"/>
+                <CheckBox x:ConnectionId='6'
+                    Grid.Column="3"
+                    x:Name="AvailableCheckBox"
+                    Content="Disponibil"
+                    IsChecked="True"
+                    Foreground="{StaticResource PrimaryTextBrush}"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,4,4"/>
 
-                <Button x:ConnectionId='7' Grid.Column="4"
-                        x:Name="SaveButton"
-                        Content="Salveaza"
-                                                
-                        Style="{StaticResource AccentButtonStyle}"
-                        VerticalAlignment="Bottom"/>
+                <Button x:ConnectionId='7'
+                    Grid.Column="4"
+                    x:Name="SaveButton"
+                    Content="Salveaza"
+                                            
+                    Style="{StaticResource PrimaryButtonStyle}"
+                    VerticalAlignment="Bottom"/>
 
-                <Button x:ConnectionId='8' Grid.Column="5"
-                        x:Name="ClearButton"
-                        Content="Curata"
-                                                 
-                        VerticalAlignment="Bottom"/>
+                <Button x:ConnectionId='8'
+                    Grid.Column="5"
+                    x:Name="ClearButton"
+                    Content="Curata"
+                                             
+                    Style="{StaticResource SecondaryButtonStyle}"
+                    VerticalAlignment="Bottom"/>
 
-                <Button x:ConnectionId='9' Grid.Column="6"
-                        Content="Inapoi"
-                                                
-                        VerticalAlignment="Bottom"/>
+                <Button x:ConnectionId='9'
+                    Grid.Column="6"
+                    Content="Inapoi"
+                                            
+                    Style="{StaticResource SecondaryButtonStyle}"
+                    VerticalAlignment="Bottom"/>
             </Grid>
         </Border>
 
-        <!-- Menu List -->
-        <Border Grid.Row="2"
-                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
-                BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}"
-                BorderThickness="1"
-                CornerRadius="8"
-                Padding="20">
-
+        <!-- List -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0"
-                           Text="Produse din meniu"
-                           FontSize="18"
-                           FontWeight="SemiBold"
-                           Margin="0,0,0,12"/>
+                <TextBlock
+                    Grid.Row="0"
+                    Text="Produse din meniu"
+                    Style="{StaticResource SectionTitleStyle}"
+                    Margin="0,0,0,12"/>
 
-                <ListView x:ConnectionId='2' Grid.Row="1"
-                          x:Name="MenuListView"
-                          SelectionMode="None">
+                <ListView x:ConnectionId='2'
+                    Grid.Row="1"
+                    x:Name="MenuListView"
+                    SelectionMode="None"
+                    Background="Transparent"
+                    BorderThickness="0">
 
                     <ListView.Header>
-                        <Grid Padding="12,8"
-                              Background="{ThemeResource SubtleFillColorSecondaryBrush}">
-
+                        <Grid Padding="12,10" Background="{StaticResource HeaderBackgroundBrush}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="70"/>
                                 <ColumnDefinition Width="2*"/>
                                 <ColumnDefinition Width="1.5*"/>
                                 <ColumnDefinition Width="120"/>
                                 <ColumnDefinition Width="130"/>
-                                <ColumnDefinition Width="180"/>
+                                <ColumnDefinition Width="190"/>
                             </Grid.ColumnDefinitions>
 
-                            <TextBlock Grid.Column="0"
-                                       Text="ID"
-                                       FontWeight="SemiBold"/>
-
-                            <TextBlock Grid.Column="1"
-                                       Text="Produs"
-                                       FontWeight="SemiBold"/>
-
-                            <TextBlock Grid.Column="2"
-                                       Text="Categorie"
-                                       FontWeight="SemiBold"/>
-
-                            <TextBlock Grid.Column="3"
-                                       Text="Pret"
-                                       FontWeight="SemiBold"/>
-
-                            <TextBlock Grid.Column="4"
-                                       Text="Status"
-                                       FontWeight="SemiBold"/>
-
-                            <TextBlock Grid.Column="5"
-                                       Text="Actiuni"
-                                       FontWeight="SemiBold"/>
+                            <TextBlock Grid.Column="0" Text="ID" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="1" Text="Produs" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="2" Text="Categorie" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="3" Text="Pret" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="4" Text="Status" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="5" Text="Actiuni" Style="{StaticResource TableHeaderTextStyle}"/>
                         </Grid>
                     </ListView.Header>
 
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Border BorderBrush="{ThemeResource DividerStrokeColorDefaultBrush}"
-                                    BorderThickness="0,0,0,1"
-                                    Padding="12,10">
+                            <Border
+                                BorderBrush="{StaticResource CardBorderBrush}"
+                                BorderThickness="0,0,0,1"
+                                Padding="12,10">
 
                                 <Grid>
                                     <Grid.ColumnDefinitions>
@@ -174,39 +258,50 @@
                                         <ColumnDefinition Width="1.5*"/>
                                         <ColumnDefinition Width="120"/>
                                         <ColumnDefinition Width="130"/>
-                                        <ColumnDefinition Width="180"/>
+                                        <ColumnDefinition Width="190"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Grid.Column="0"
-                                               Text="{Binding MenuId}"
-                                               VerticalAlignment="Center"/>
+                                    <TextBlock
+                                        Grid.Column="0"
+                                        Text="{Binding MenuId}"
+                                        Style="{StaticResource TableTextStyle}"/>
 
-                                    <TextBlock Grid.Column="1"
-                                               Text="{Binding Name}"
-                                               VerticalAlignment="Center"/>
+                                    <TextBlock
+                                        Grid.Column="1"
+                                        Text="{Binding Name}"
+                                        Style="{StaticResource TableTextStyle}"/>
 
-                                    <TextBlock Grid.Column="2"
-                                               Text="{Binding Category}"
-                                               VerticalAlignment="Center"
-                                               Foreground="Gray"/>
+                                    <TextBlock
+                                        Grid.Column="2"
+                                        Text="{Binding Category}"
+                                        Foreground="{StaticResource SecondaryTextBrush}"
+                                        VerticalAlignment="Center"/>
 
-                                    <TextBlock Grid.Column="3"
-                                               Text="{Binding PriceText}"
-                                               VerticalAlignment="Center"/>
+                                    <TextBlock
+                                        Grid.Column="3"
+                                        Text="{Binding PriceText}"
+                                        Style="{StaticResource TableTextStyle}"/>
 
-                                    <TextBlock Grid.Column="4"
-                                               Text="{Binding AvailabilityText}"
-                                               VerticalAlignment="Center"/>
+                                    <TextBlock
+                                        Grid.Column="4"
+                                        Text="{Binding AvailabilityText}"
+                                        Style="{StaticResource TableTextStyle}"/>
 
-                                    <StackPanel Grid.Column="5"
-                                                Orientation="Horizontal"
-                                                Spacing="8">
+                                    <StackPanel
+                                        Grid.Column="5"
+                                        Orientation="Horizontal"
+                                        Spacing="8"
+                                        VerticalAlignment="Center">
 
-                                        <Button x:ConnectionId='4' Content="Edit"
-                                                                        />
+                                        <Button x:ConnectionId='4'
+                                            Content="Edit"
+                                                                    
+                                            Style="{StaticResource EditButtonStyle}"/>
 
-                                        <Button x:ConnectionId='5' Content="Sterge"
-                                                                          />
+                                        <Button x:ConnectionId='5'
+                                            Content="Sterge"
+                                                                      
+                                            Style="{StaticResource DeleteButtonStyle}"/>
                                     </StackPanel>
                                 </Grid>
                             </Border>

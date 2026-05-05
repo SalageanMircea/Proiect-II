@@ -7,8 +7,28 @@
     mc:Ignorable="d"
     Background="#B19149">
 
+    <Page.Resources>
+
+        <Style x:Key="AdminButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style x:Key="AdminButtonTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="AdminButtonDescriptionStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+    </Page.Resources>
+
     <ScrollViewer>
         <StackPanel Padding="30" Spacing="25">
+
             <TextBlock
                 Text="Panou Administrare"
                 FontSize="32"
@@ -20,57 +40,126 @@
                 Foreground="Black"/>
 
             <Grid ColumnSpacing="20" RowSpacing="10">
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="0" Grid.Column="0" Height="100" Click="MenuButton_Click">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Menu"
+                    Click="AdminButton_Click">
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea meniului" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Adauga, editeaza si sterge preparate"/>
+                        <TextBlock
+                            Text="Gestionarea meniului"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Adauga, editeaza si sterge preparate"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Grid.Row="0" Grid.Column="1" Height="100" Click="TablesButton_Click">
+                <Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Tables"
+                    Click="AdminButton_Click">
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea meselor" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Organizare si starea meselor"/>
+                        <TextBlock
+                            Text="Gestionarea meselor"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Organizare si starea meselor"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Grid.Row="1" Grid.Column="0" Height="100" Click="OrdersButton_Click">
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Orders"
+                    Click="AdminButton_Click">
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea comenzilor" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Vizualizare și administrare comenzi"/>
+                        <TextBlock
+                            Text="Gestionarea comenzilor"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Vizualizare si administrare comenzi"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Grid.Row="1" Grid.Column="1" Height="100" Click="StockButton_Click">
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Stock"
+                    Click="AdminButton_Click">
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea stocului" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Produse si cantitati disponibile"/>
+                        <TextBlock
+                            Text="Gestionarea stocului"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Produse si cantitati disponibile"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Grid.Row="2" Grid.Column="0" Height="100" Click="ShoppingButton_Click">
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Shopping"
+                    Click="AdminButton_Click">
+
                     <StackPanel>
-                        <TextBlock Text="Lista cumparaturi / aprovizionare" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Necesitati pentru aprovizionare"/>
+                        <TextBlock
+                            Text="Lista cumparaturi / aprovizionare"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Necesitati pentru aprovizionare"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button Grid.Row="2" Grid.Column="1" Height="100" Click="EmployeesButton_Click">
+                <Button
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Employees"
+                    Click="AdminButton_Click">
+
                     <StackPanel>
-                        <TextBlock Text="Program angajati" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Gestionarea turelor și programului"/>
+                        <TextBlock
+                            Text="Program angajati"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Gestionarea turelor si programului"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
+
             </Grid>
 
             <Button
@@ -78,13 +167,16 @@
                 Height="90"
                 FontSize="20"
                 FontWeight="SemiBold"
-                Click="DashboardButton_Click"/>
+                Tag="Dashboard"
+                Click="AdminButton_Click"/>
 
             <Button
                 Content="Delogare"
                 Height="45"
                 HorizontalAlignment="Left"
-                Click="LogoutButton_Click"/>
+                Tag="Logout"
+                Click="AdminButton_Click"/>
+
         </StackPanel>
     </ScrollViewer>
 </Page>

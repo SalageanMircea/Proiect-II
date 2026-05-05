@@ -1,33 +1,27 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-
-// To learn more about WinUI, the WinUI project structure,
-// and more about our project templates, see: http://aka.ms/winui-project-info.
+using Restaurant_Management.Services;
 
 namespace Restaurant_Management.Views
 {
     public sealed partial class DashboardPage : Page
     {
+        private readonly AdminRouteService _adminRouteService;
+
         public DashboardPage()
         {
             this.InitializeComponent();
+
+            INavigationService navigationService =
+                new FrameNavigationService(MainWindow.Instance.AppFrame);
+
+            _adminRouteService =
+                new AdminRouteService(navigationService);
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.Instance.AppFrame.Navigate(typeof(AdminHomePage));
+            _adminRouteService.Navigate(AdminRoute.AdminHome);
         }
     }
 }

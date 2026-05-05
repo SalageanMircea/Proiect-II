@@ -1,84 +1,64 @@
-using Microsoft.Data.SqlClient;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Restaurant_Management.Data;
+using Restaurant_Management.Models;
+using Restaurant_Management.Repositories;
+using Restaurant_Management.Services;
 using System;
 
 namespace Restaurant_Management.Views
 {
     public sealed partial class LoginPage : Page
     {
+        private readonly ILoginService loginService;
+
+        private readonly IRoleNavigationService roleNavigationService;
+
         public LoginPage()
+            : this(
+                  new LoginService(new SqlUserRepository()),
+                  new RoleNavigationService(
+                      new FrameNavigationService(MainWindow.Instance.AppFrame)))
+        {
+        }
+
+        public LoginPage(
+            ILoginService loginService,
+            IRoleNavigationService roleNavigationService)
         {
             this.InitializeComponent();
+
+            this.loginService = loginService;
+            this.roleNavigationService = roleNavigationService;
         }
 
         private async void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            string username = UsernameTextBox.Text.Trim();
-            string password = PasswordBox.Password.Trim();
-
-            if (username == "" || password == "")
-            {
-                ErrorTextBlock.Text = "Completeaza username si parola!";
-                return;
-            }
-
             ErrorTextBlock.Text = "";
+
+            string username = UsernameTextBox.Text;
+            string password = PasswordBox.Password;
 
             try
             {
-                SqlConnection conn = DbHelper.GetConnection();
-                conn.Open();
+                LoginResult result = loginService.Login(username, password);
 
-                string query = "SELECT FullName, Role FROM Users WHERE Username = @user AND Password = @pass";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@user", username);
-                cmd.Parameters.AddWithValue("@pass", password);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                if (result.Success == false)
                 {
-                    string role = reader["Role"].ToString().Trim();
-                    string fullName = reader["FullName"].ToString().Trim();
-
-                    reader.Close();
-                    conn.Close();
-
-                    if (role == "Manager")
-                    {
-                        Frame.Navigate(typeof(AdminHomePage));
-                    }
-                    else if (role == "Ospatar")
-                    {
-                        
-                        Frame.Navigate(typeof(WaiterPage));
-                        if (Frame.Content is WaiterPage waiterPage)
-                        {
-                            waiterPage.Initialize(fullName);
-                        }
-                    }
-                    else if (role == "Bucatar")
-                    {
-                       
-                        Frame.Navigate(typeof(KitchenChefPage));
-                        if (Frame.Content is KitchenChefPage chefPage)
-                        {
-                            chefPage.Initialize(fullName);
-                        }
-                    }
-                    else
-                    {
-                        ErrorTextBlock.Text = "Rol necunoscut.";
-                    }
+                    ErrorTextBlock.Text = result.Message;
+                    return;
                 }
-                else
+
+                if (result.User == null)
                 {
-                    reader.Close();
-                    conn.Close();
-                    ErrorTextBlock.Text = "Username sau parola incorecta.";
+                    ErrorTextBlock.Text = "A aparut o problema la autentificare.";
+                    return;
+                }
+
+                bool navigationWorked = roleNavigationService.NavigateByRole(result.User);
+
+                if (navigationWorked == false)
+                {
+                    ErrorTextBlock.Text = "Rol necunoscut.";
                 }
             }
             catch (Exception ex)
@@ -89,13 +69,12 @@ namespace Restaurant_Management.Views
 
         private async System.Threading.Tasks.Task ShowDialog(string title, string content)
         {
-            ContentDialog dialog = new ContentDialog
-            {
-                Title = title,
-                Content = content,
-                CloseButtonText = "OK",
-                XamlRoot = this.XamlRoot
-            };
+            ContentDialog dialog = new ContentDialog();
+
+            dialog.Title = title;
+            dialog.Content = content;
+            dialog.CloseButtonText = "OK";
+            dialog.XamlRoot = this.XamlRoot;
 
             await dialog.ShowAsync();
         }

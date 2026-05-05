@@ -2,6 +2,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
+using Microsoft.UI.Xaml.Navigation;
 using Restaurant_Management.Data;
 using System;
 using System.Collections.ObjectModel;
@@ -11,10 +12,13 @@ namespace Restaurant_Management.Views
 {
     public sealed partial class KitchenChefPage : Page
     {
-        string chefName = "";
+        private string chefName = "";
 
-        ObservableCollection<ChefOrderItem> allOrders = new ObservableCollection<ChefOrderItem>();
-        ObservableCollection<ChefOrderItem> visibleOrders = new ObservableCollection<ChefOrderItem>();
+        private ObservableCollection<ChefOrderItem> allOrders =
+            new ObservableCollection<ChefOrderItem>();
+
+        private ObservableCollection<ChefOrderItem> visibleOrders =
+            new ObservableCollection<ChefOrderItem>();
 
         public KitchenChefPage()
         {
@@ -26,9 +30,23 @@ namespace Restaurant_Management.Views
         public void Initialize(string name)
         {
             chefName = name;
-            WelcomeText.Text = "Bun venit, " + name + "!";
+            WelcomeText.Text = "Bun venit, " + chefName + "!";
 
             LoadOrders();
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            if (e.Parameter is string name)
+            {
+                Initialize(name);
+            }
+            else
+            {
+                LoadOrders();
+            }
         }
 
         private void LoadOrders()
@@ -37,13 +55,16 @@ namespace Restaurant_Management.Views
 
             try
             {
-                SqlConnection conn = DbHelper.GetConnection();
+                using SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string sql = "SELECT OrderId, TableNumber, WaiterName, Details, Status, SentAt FROM Orders ORDER BY SentAt DESC";
+                string sql = @"
+                    SELECT OrderId, TableNumber, WaiterName, Details, Status, SentAt
+                    FROM Orders
+                    ORDER BY SentAt DESC";
 
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
+                using SqlCommand cmd = new SqlCommand(sql, conn);
+                using SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
@@ -51,16 +72,13 @@ namespace Restaurant_Management.Views
 
                     order.OrderId = Convert.ToInt32(reader["OrderId"]);
                     order.TableNumber = Convert.ToInt32(reader["TableNumber"]);
-                    order.WaiterName = reader["WaiterName"].ToString();
-                    order.Details = reader["Details"].ToString();
-                    order.Status = reader["Status"].ToString();
+                    order.WaiterName = reader["WaiterName"].ToString() ?? "";
+                    order.Details = reader["Details"].ToString() ?? "";
+                    order.Status = reader["Status"].ToString() ?? "";
                     order.SentAt = Convert.ToDateTime(reader["SentAt"]).ToString("dd/MM/yyyy HH:mm");
 
                     allOrders.Add(order);
                 }
-
-                reader.Close();
-                conn.Close();
             }
             catch (Exception ex)
             {
@@ -74,37 +92,39 @@ namespace Restaurant_Management.Views
         {
             visibleOrders.Clear();
 
-            string filter = "";
+            string selectedFilter = GetSelectedFilter();
 
-            if (FilterReceived.IsChecked == true)
+            foreach (ChefOrderItem order in allOrders)
             {
-                filter = "Received";
-            }
-            else if (FilterPreparing.IsChecked == true)
-            {
-                filter = "Preparing";
-            }
-            else if (FilterDone.IsChecked == true)
-            {
-                filter = "Done";
-            }
-
-            for (int i = 0; i < allOrders.Count; i++)
-            {
-                ChefOrderItem order = allOrders[i];
-
-                if (filter == "")
+                if (selectedFilter == "All")
                 {
                     visibleOrders.Add(order);
                 }
-                else
+                else if (order.Status == selectedFilter)
                 {
-                    if (order.Status == filter)
-                    {
-                        visibleOrders.Add(order);
-                    }
+                    visibleOrders.Add(order);
                 }
             }
+        }
+
+        private string GetSelectedFilter()
+        {
+            if (FilterReceived.IsChecked == true)
+            {
+                return "Received";
+            }
+
+            if (FilterPreparing.IsChecked == true)
+            {
+                return "Preparing";
+            }
+
+            if (FilterDone.IsChecked == true)
+            {
+                return "Done";
+            }
+
+            return "All";
         }
 
         private void Filter_Click(object sender, RoutedEventArgs e)
@@ -117,59 +137,50 @@ namespace Restaurant_Management.Views
             LoadOrders();
         }
 
-        private void SetReceived_Click(object sender, RoutedEventArgs e)
+        private void ChangeStatusButton_Click(object sender, RoutedEventArgs e)
         {
-            Button btn = sender as Button;
+            Button button = sender as Button;
 
-            if (btn == null)
+            if (button == null)
+            {
                 return;
+            }
 
-            int id = Convert.ToInt32(btn.Tag);
+            ChefOrderItem order = button.DataContext as ChefOrderItem;
 
-            UpdateStatus(id, "Received");
-        }
-
-        private void SetPreparing_Click(object sender, RoutedEventArgs e)
-        {
-            Button btn = sender as Button;
-
-            if (btn == null)
+            if (order == null)
+            {
                 return;
+            }
 
-            int id = Convert.ToInt32(btn.Tag);
+            string newStatus = button.Tag as string;
 
-            UpdateStatus(id, "Preparing");
-        }
-
-        private void SetDone_Click(object sender, RoutedEventArgs e)
-        {
-            Button btn = sender as Button;
-
-            if (btn == null)
+            if (string.IsNullOrWhiteSpace(newStatus))
+            {
                 return;
+            }
 
-            int id = Convert.ToInt32(btn.Tag);
-
-            UpdateStatus(id, "Done");
+            UpdateStatus(order.OrderId, newStatus);
         }
 
         private void UpdateStatus(int orderId, string newStatus)
         {
             try
             {
-                SqlConnection conn = DbHelper.GetConnection();
+                using SqlConnection conn = DbHelper.GetConnection();
                 conn.Open();
 
-                string sql = "UPDATE Orders SET Status=@status WHERE OrderId=@id";
+                string sql = @"
+                    UPDATE Orders
+                    SET Status = @status
+                    WHERE OrderId = @id";
 
-                SqlCommand cmd = new SqlCommand(sql, conn);
+                using SqlCommand cmd = new SqlCommand(sql, conn);
 
                 cmd.Parameters.AddWithValue("@status", newStatus);
                 cmd.Parameters.AddWithValue("@id", orderId);
 
                 cmd.ExecuteNonQuery();
-
-                conn.Close();
 
                 LoadOrders();
             }
@@ -181,7 +192,7 @@ namespace Restaurant_Management.Views
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(LoginPage));
+            MainWindow.Instance.AppFrame.Navigate(typeof(LoginPage));
         }
 
         private async void ShowError(string message)
@@ -203,13 +214,13 @@ namespace Restaurant_Management.Views
 
         public int TableNumber { get; set; }
 
-        public string WaiterName { get; set; }
+        public string WaiterName { get; set; } = "";
 
-        public string Details { get; set; }
+        public string Details { get; set; } = "";
 
-        public string SentAt { get; set; }
+        public string SentAt { get; set; } = "";
 
-        private string status;
+        private string status = "";
 
         public string Status
         {
@@ -220,27 +231,32 @@ namespace Restaurant_Management.Views
 
             set
             {
-                status = value;
-
-                if (status == "Received")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 59, 130, 246));
-                }
-                else if (status == "Preparing")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 234, 179, 8));
-                }
-                else if (status == "Done")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 34, 197, 94));
-                }
-                else
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 107, 114, 128));
-                }
+                status = value ?? "";
+                StatusColor = GetColorForStatus(status);
             }
         }
 
-        public SolidColorBrush StatusColor { get; set; }
+        public SolidColorBrush StatusColor { get; set; } =
+            new SolidColorBrush(Color.FromArgb(255, 107, 114, 128));
+
+        private SolidColorBrush GetColorForStatus(string status)
+        {
+            if (status == "Received")
+            {
+                return new SolidColorBrush(Color.FromArgb(255, 59, 130, 246));
+            }
+
+            if (status == "Preparing")
+            {
+                return new SolidColorBrush(Color.FromArgb(255, 234, 179, 8));
+            }
+
+            if (status == "Done")
+            {
+                return new SolidColorBrush(Color.FromArgb(255, 34, 197, 94));
+            }
+
+            return new SolidColorBrush(Color.FromArgb(255, 107, 114, 128));
+        }
     }
 }

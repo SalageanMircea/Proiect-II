@@ -1,24 +1,55 @@
-using Microsoft.Data.SqlClient;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Media;
-using Restaurant_Management.Data;
+using Microsoft.UI.Xaml.Navigation;
+using Restaurant_Management.Models;
+using Restaurant_Management.Repositories;
+using Restaurant_Management.Services;
+using Restaurant_Management.ViewModels;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Windows.UI;
 
 namespace Restaurant_Management.Views
 {
     public sealed partial class WaiterPage : Page
     {
-        string waiterName = "";
+        private string waiterName = "";
 
-        ObservableCollection<WaiterMenuItem> menuItems = new ObservableCollection<WaiterMenuItem>();
-        ObservableCollection<WaiterOrderItem> orders = new ObservableCollection<WaiterOrderItem>();
+        private readonly ObservableCollection<WaiterMenuItemViewModel> menuItems =
+            new ObservableCollection<WaiterMenuItemViewModel>();
+
+        private readonly ObservableCollection<WaiterOrderItemViewModel> orders =
+            new ObservableCollection<WaiterOrderItemViewModel>();
+
+        private readonly IWaiterRepository waiterRepository;
+
+        private readonly IOrderLineBuilderService orderLineBuilderService;
+
+        private readonly IWaiterStatusColorService statusColorService;
+
+        private readonly INavigationService navigationService;
 
         public WaiterPage()
+            : this(
+                  new SqlWaiterRepository(),
+                  new OrderLineBuilderService(),
+                  new WaiterStatusColorService(),
+                  new FrameNavigationService(MainWindow.Instance.AppFrame))
+        {
+        }
+
+        public WaiterPage(
+            IWaiterRepository waiterRepository,
+            IOrderLineBuilderService orderLineBuilderService,
+            IWaiterStatusColorService statusColorService,
+            INavigationService navigationService)
         {
             this.InitializeComponent();
+
+            this.waiterRepository = waiterRepository;
+            this.orderLineBuilderService = orderLineBuilderService;
+            this.statusColorService = statusColorService;
+            this.navigationService = navigationService;
 
             MenuListView.ItemsSource = menuItems;
             OrdersListView.ItemsSource = orders;
@@ -27,42 +58,46 @@ namespace Restaurant_Management.Views
         public void Initialize(string name)
         {
             waiterName = name;
-            WelcomeText.Text = "Bun venit, " + name + "!";
+            WelcomeText.Text = "Bun venit, " + waiterName + "!";
 
             LoadMenu();
             LoadOrders();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            if (e.Parameter is string name)
+            {
+                Initialize(name);
+            }
+            else
+            {
+                waiterName = "Ospatar";
+                WelcomeText.Text = "Bun venit, " + waiterName + "!";
+
+                LoadMenu();
+                LoadOrders();
+            }
+        }
+
         private void LoadMenu()
         {
-            menuItems.Clear();
-
             try
             {
-                SqlConnection conn = DbHelper.GetConnection();
-                conn.Open();
+                menuItems.Clear();
 
-                string sql = "SELECT MenuId, Name, Category, Price, IsAvailable FROM MenuItems WHERE IsAvailable=1 ORDER BY Category, Name";
+                List<RestaurantMenuItem> items =
+                    waiterRepository.GetAvailableMenuItems();
 
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                for (int i = 0; i < items.Count; i++)
                 {
-                    WaiterMenuItem item = new WaiterMenuItem();
+                    WaiterMenuItemViewModel itemViewModel =
+                        WaiterMenuItemViewModel.FromModel(items[i]);
 
-                    item.MenuId = Convert.ToInt32(reader["MenuId"]);
-                    item.Name = reader["Name"].ToString();
-                    item.Category = reader["Category"].ToString();
-                    item.Price = Convert.ToDecimal(reader["Price"]);
-                    item.IsAvailable = Convert.ToBoolean(reader["IsAvailable"]);
-                    item.Quantity = 1;
-
-                    menuItems.Add(item);
+                    menuItems.Add(itemViewModel);
                 }
-
-                reader.Close();
-                conn.Close();
             }
             catch (Exception ex)
             {
@@ -72,35 +107,25 @@ namespace Restaurant_Management.Views
 
         private void LoadOrders()
         {
-            orders.Clear();
-
             try
             {
-                SqlConnection conn = DbHelper.GetConnection();
-                conn.Open();
+                orders.Clear();
 
-                string sql = "SELECT OrderId, TableNumber, Details, Status, SentAt FROM Orders WHERE WaiterName=@waiter ORDER BY SentAt DESC";
+                List<WaiterOrder> waiterOrders =
+                    waiterRepository.GetOrdersForWaiter(waiterName);
 
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@waiter", waiterName);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                while (reader.Read())
+                for (int i = 0; i < waiterOrders.Count; i++)
                 {
-                    WaiterOrderItem order = new WaiterOrderItem();
+                    WaiterOrder order = waiterOrders[i];
 
-                    order.OrderId = Convert.ToInt32(reader["OrderId"]);
-                    order.TableNumber = Convert.ToInt32(reader["TableNumber"]);
-                    order.Details = reader["Details"].ToString();
-                    order.Status = reader["Status"].ToString();
-                    order.SentAt = Convert.ToDateTime(reader["SentAt"]).ToString("dd/MM/yyyy HH:mm");
+                    WaiterOrderItemViewModel orderViewModel =
+                        new WaiterOrderItemViewModel(
+                            order,
+                            statusColorService.GetStatusColor(order.Status)
+                        );
 
-                    orders.Add(order);
+                    orders.Add(orderViewModel);
                 }
-
-                reader.Close();
-                conn.Close();
             }
             catch (Exception ex)
             {
@@ -110,28 +135,39 @@ namespace Restaurant_Management.Views
 
         private void AddMenuItemToOrder_Click(object sender, RoutedEventArgs e)
         {
-            Button btn = sender as Button;
+            Button button = sender as Button;
 
-            if (btn == null)
+            if (button == null)
+            {
                 return;
+            }
 
-            WaiterMenuItem item = btn.DataContext as WaiterMenuItem;
+            WaiterMenuItemViewModel selectedItem =
+                button.DataContext as WaiterMenuItemViewModel;
 
-            if (item == null)
+            if (selectedItem == null)
+            {
                 return;
+            }
 
-            int quantity = Convert.ToInt32(item.Quantity);
+            int quantity = Convert.ToInt32(selectedItem.Quantity);
 
             if (quantity < 1)
             {
                 quantity = 1;
             }
 
-            decimal total = quantity * item.Price;
+            RestaurantMenuItem menuItem = selectedItem.ToModel();
 
-            string text = quantity + "x " + item.Name + " (" + total.ToString("0.00") + " lei)";
+            string orderLine =
+                orderLineBuilderService.BuildOrderLine(menuItem, quantity);
 
-            if (OrderTextBox.Text.Trim() == "")
+            AddTextToOrderBox(orderLine);
+        }
+
+        private void AddTextToOrderBox(string text)
+        {
+            if (string.IsNullOrWhiteSpace(OrderTextBox.Text))
             {
                 OrderTextBox.Text = text;
             }
@@ -144,31 +180,24 @@ namespace Restaurant_Management.Views
         private async void SendOrderButton_Click(object sender, RoutedEventArgs e)
         {
             string details = OrderTextBox.Text.Trim();
-            int tableNumber = Convert.ToInt32(TableNumberBox.Value);
 
-            if (details == "")
+            if (string.IsNullOrWhiteSpace(details))
             {
                 await ShowDialog("Eroare", "Selecteaza produse din meniu.");
                 return;
             }
 
+            int tableNumber = Convert.ToInt32(TableNumberBox.Value);
+
+            if (tableNumber < 1)
+            {
+                await ShowDialog("Eroare", "Numarul mesei trebuie sa fie mai mare decat 0.");
+                return;
+            }
+
             try
             {
-                SqlConnection conn = DbHelper.GetConnection();
-                conn.Open();
-
-                string sql = "INSERT INTO Orders (TableNumber, Details, Status, WaiterName, SentAt) VALUES (@table, @details, 'Received', @waiter, @date)";
-
-                SqlCommand cmd = new SqlCommand(sql, conn);
-
-                cmd.Parameters.AddWithValue("@table", tableNumber);
-                cmd.Parameters.AddWithValue("@details", details);
-                cmd.Parameters.AddWithValue("@waiter", waiterName);
-                cmd.Parameters.AddWithValue("@date", DateTime.Now);
-
-                cmd.ExecuteNonQuery();
-
-                conn.Close();
+                waiterRepository.CreateOrder(tableNumber, details, waiterName);
 
                 OrderTextBox.Text = "";
 
@@ -195,7 +224,7 @@ namespace Restaurant_Management.Views
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(LoginPage));
+            navigationService.NavigateTo(typeof(LoginPage));
         }
 
         private async void ShowError(string message)
@@ -214,73 +243,5 @@ namespace Restaurant_Management.Views
 
             await dialog.ShowAsync();
         }
-    }
-
-    public class WaiterMenuItem
-    {
-        public int MenuId { get; set; }
-
-        public string Name { get; set; }
-
-        public string Category { get; set; }
-
-        public decimal Price { get; set; }
-
-        public bool IsAvailable { get; set; }
-
-        public double Quantity { get; set; }
-
-        public string PriceText
-        {
-            get
-            {
-                return Price.ToString("0.00") + " lei";
-            }
-        }
-    }
-
-    public class WaiterOrderItem
-    {
-        public int OrderId { get; set; }
-
-        public int TableNumber { get; set; }
-
-        public string Details { get; set; }
-
-        public string SentAt { get; set; }
-
-        private string status;
-
-        public string Status
-        {
-            get
-            {
-                return status;
-            }
-
-            set
-            {
-                status = value;
-
-                if (status == "Received")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 59, 130, 246));
-                }
-                else if (status == "Preparing")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 234, 179, 8));
-                }
-                else if (status == "Done")
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 34, 197, 94));
-                }
-                else
-                {
-                    StatusColor = new SolidColorBrush(Color.FromArgb(255, 107, 114, 128));
-                }
-            }
-        }
-
-        public SolidColorBrush StatusColor { get; set; }
     }
 }

@@ -7,8 +7,28 @@
     mc:Ignorable="d"
     Background="#B19149">
 
+    <Page.Resources>
+
+        <Style x:Key="AdminButtonStyle" TargetType="Button">
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style x:Key="AdminButtonTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style x:Key="AdminButtonDescriptionStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+    </Page.Resources>
+
     <ScrollViewer>
         <StackPanel Padding="30" Spacing="25">
+
             <TextBlock
                 Text="Panou Administrare"
                 FontSize="32"
@@ -20,57 +40,126 @@
                 Foreground="Black"/>
 
             <Grid ColumnSpacing="20" RowSpacing="10">
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:ConnectionId='4' Grid.Row="0" Grid.Column="0" Height="100"                         >
+                <Button x:ConnectionId='4'
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Menu"
+                                             >
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea meniului" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Adauga, editeaza si sterge preparate"/>
+                        <TextBlock
+                            Text="Gestionarea meniului"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Adauga, editeaza si sterge preparate"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='5' Grid.Row="0" Grid.Column="1" Height="100"                           >
+                <Button x:ConnectionId='5'
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Tables"
+                                             >
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea meselor" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Organizare si starea meselor"/>
+                        <TextBlock
+                            Text="Gestionarea meselor"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Organizare si starea meselor"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='6' Grid.Row="1" Grid.Column="0" Height="100"                           >
+                <Button x:ConnectionId='6'
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Orders"
+                                             >
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea comenzilor" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Vizualizare și administrare comenzi"/>
+                        <TextBlock
+                            Text="Gestionarea comenzilor"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Vizualizare si administrare comenzi"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='7' Grid.Row="1" Grid.Column="1" Height="100"                          >
+                <Button x:ConnectionId='7'
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Stock"
+                                             >
+
                     <StackPanel>
-                        <TextBlock Text="Gestionarea stocului" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Produse si cantitati disponibile"/>
+                        <TextBlock
+                            Text="Gestionarea stocului"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Produse si cantitati disponibile"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='8' Grid.Row="2" Grid.Column="0" Height="100"                             >
+                <Button x:ConnectionId='8'
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Shopping"
+                                             >
+
                     <StackPanel>
-                        <TextBlock Text="Lista cumparaturi / aprovizionare" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Necesitati pentru aprovizionare"/>
+                        <TextBlock
+                            Text="Lista cumparaturi / aprovizionare"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Necesitati pentru aprovizionare"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='9' Grid.Row="2" Grid.Column="1" Height="100"                              >
+                <Button x:ConnectionId='9'
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="Employees"
+                                             >
+
                     <StackPanel>
-                        <TextBlock Text="Program angajati" FontSize="20" FontWeight="SemiBold"/>
-                        <TextBlock Text="Gestionarea turelor și programului"/>
+                        <TextBlock
+                            Text="Program angajati"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Gestionarea turelor si programului"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
                     </StackPanel>
                 </Button>
+
             </Grid>
 
             <Button x:ConnectionId='2'
@@ -78,13 +167,16 @@
                 Height="90"
                 FontSize="20"
                 FontWeight="SemiBold"
-                                             />
+                Tag="Dashboard"
+                                         />
 
             <Button x:ConnectionId='3'
                 Content="Delogare"
                 Height="45"
                 HorizontalAlignment="Left"
-                                          />
+                Tag="Logout"
+                                         />
+
         </StackPanel>
     </ScrollViewer>
 </Page>

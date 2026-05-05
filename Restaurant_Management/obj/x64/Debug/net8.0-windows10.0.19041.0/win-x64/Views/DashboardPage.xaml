@@ -4,11 +4,39 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     Background="Black">
 
-    <StackPanel Padding="30" Spacing="20">
-        <TextBlock Text="Dashboard / Statistici" FontSize="30" FontWeight="Bold"/>
-        <TextBlock Text="Aici vei putea vedea statisticile aplicatiei." FontSize="18"/>
+    <Page.Resources>
+        <Style x:Key="DashboardTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
 
-        <Button x:ConnectionId='2' Content="Inapoi" Width="120"                         />
+        <Style x:Key="DashboardTextStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <Style x:Key="BackButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="45"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Padding="30" Spacing="20">
+
+        <TextBlock
+            Text="Dashboard / Statistici"
+            Style="{StaticResource DashboardTitleStyle}"/>
+
+        <TextBlock
+            Text="Aici vei putea vedea statisticile aplicatiei."
+            Style="{StaticResource DashboardTextStyle}"/>
+
+        <Button x:ConnectionId='2'
+            Content="Inapoi"
+            Style="{StaticResource BackButtonStyle}"
+                                    />
+
     </StackPanel>
 </Page>
 
