@@ -226,7 +226,7 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[40];
+            _typeNameTable = new string[41];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -243,32 +243,33 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
             _typeNameTable[13] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.UserControl";
             _typeNameTable[15] = "Restaurant_Management.Views.DashboardPage";
-            _typeNameTable[16] = "Restaurant_Management.Views.EmployeeSchedulePage";
-            _typeNameTable[17] = "Restaurant_Management.Views.KitchenChefPage";
-            _typeNameTable[18] = "Restaurant_Management.Views.LoginPage";
-            _typeNameTable[19] = "Restaurant_Management.Views.MenuManagementPage";
-            _typeNameTable[20] = "Restaurant_Management.Views.OrderManagementPage";
-            _typeNameTable[21] = "Restaurant_Management.Views.ShoppingListPage";
-            _typeNameTable[22] = "Restaurant_Management.Views.StockManagementPage";
-            _typeNameTable[23] = "Restaurant_Management.Views.TableManagementPage";
-            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.NumberBox";
-            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[26] = "Double";
-            _typeNameTable[27] = "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[29] = "Windows.Globalization.NumberFormatting.INumberFormatter2";
-            _typeNameTable[30] = "String";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
-            _typeNameTable[33] = "Microsoft.UI.Xaml.TextReadingOrder";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode";
-            _typeNameTable[35] = "Restaurant_Management.Views.WaiterPage";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[38] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[39] = "Int32";
+            _typeNameTable[16] = "Restaurant_Management.Views.EmployeeManagementPage";
+            _typeNameTable[17] = "Restaurant_Management.Views.EmployeeSchedulePage";
+            _typeNameTable[18] = "Restaurant_Management.Views.KitchenChefPage";
+            _typeNameTable[19] = "Restaurant_Management.Views.LoginPage";
+            _typeNameTable[20] = "Restaurant_Management.Views.MenuManagementPage";
+            _typeNameTable[21] = "Restaurant_Management.Views.OrderManagementPage";
+            _typeNameTable[22] = "Restaurant_Management.Views.ShoppingListPage";
+            _typeNameTable[23] = "Restaurant_Management.Views.StockManagementPage";
+            _typeNameTable[24] = "Restaurant_Management.Views.TableManagementPage";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.NumberBox";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[27] = "Double";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode";
+            _typeNameTable[29] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[30] = "Windows.Globalization.NumberFormatting.INumberFormatter2";
+            _typeNameTable[31] = "String";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Media.SolidColorBrush";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.TextReadingOrder";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Controls.NumberBoxValidationMode";
+            _typeNameTable[36] = "Restaurant_Management.Views.WaiterPage";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[39] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[40] = "Int32";
 
-            _typeTable = new global::System.Type[40];
+            _typeTable = new global::System.Type[41];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -285,30 +286,31 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
             _typeTable[13] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
             _typeTable[15] = typeof(global::Restaurant_Management.Views.DashboardPage);
-            _typeTable[16] = typeof(global::Restaurant_Management.Views.EmployeeSchedulePage);
-            _typeTable[17] = typeof(global::Restaurant_Management.Views.KitchenChefPage);
-            _typeTable[18] = typeof(global::Restaurant_Management.Views.LoginPage);
-            _typeTable[19] = typeof(global::Restaurant_Management.Views.MenuManagementPage);
-            _typeTable[20] = typeof(global::Restaurant_Management.Views.OrderManagementPage);
-            _typeTable[21] = typeof(global::Restaurant_Management.Views.ShoppingListPage);
-            _typeTable[22] = typeof(global::Restaurant_Management.Views.StockManagementPage);
-            _typeTable[23] = typeof(global::Restaurant_Management.Views.TableManagementPage);
-            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBox);
-            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[26] = typeof(global::System.Double);
-            _typeTable[27] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[29] = typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2);
-            _typeTable[30] = typeof(global::System.String);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
-            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.TextReadingOrder);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode);
-            _typeTable[35] = typeof(global::Restaurant_Management.Views.WaiterPage);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[38] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[39] = typeof(global::System.Int32);
+            _typeTable[16] = typeof(global::Restaurant_Management.Views.EmployeeManagementPage);
+            _typeTable[17] = typeof(global::Restaurant_Management.Views.EmployeeSchedulePage);
+            _typeTable[18] = typeof(global::Restaurant_Management.Views.KitchenChefPage);
+            _typeTable[19] = typeof(global::Restaurant_Management.Views.LoginPage);
+            _typeTable[20] = typeof(global::Restaurant_Management.Views.MenuManagementPage);
+            _typeTable[21] = typeof(global::Restaurant_Management.Views.OrderManagementPage);
+            _typeTable[22] = typeof(global::Restaurant_Management.Views.ShoppingListPage);
+            _typeTable[23] = typeof(global::Restaurant_Management.Views.StockManagementPage);
+            _typeTable[24] = typeof(global::Restaurant_Management.Views.TableManagementPage);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBox);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[27] = typeof(global::System.Double);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode);
+            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[30] = typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2);
+            _typeTable[31] = typeof(global::System.String);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Media.SolidColorBrush);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.TextReadingOrder);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode);
+            _typeTable[36] = typeof(global::Restaurant_Management.Views.WaiterPage);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[39] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[40] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -348,17 +350,18 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
         private object Activate_9_MainWindow() { return new global::Restaurant_Management.MainWindow(); }
         private object Activate_12_AdminHomePage() { return new global::Restaurant_Management.Views.AdminHomePage(); }
         private object Activate_15_DashboardPage() { return new global::Restaurant_Management.Views.DashboardPage(); }
-        private object Activate_16_EmployeeSchedulePage() { return new global::Restaurant_Management.Views.EmployeeSchedulePage(); }
-        private object Activate_17_KitchenChefPage() { return new global::Restaurant_Management.Views.KitchenChefPage(); }
-        private object Activate_18_LoginPage() { return new global::Restaurant_Management.Views.LoginPage(); }
-        private object Activate_19_MenuManagementPage() { return new global::Restaurant_Management.Views.MenuManagementPage(); }
-        private object Activate_20_OrderManagementPage() { return new global::Restaurant_Management.Views.OrderManagementPage(); }
-        private object Activate_21_ShoppingListPage() { return new global::Restaurant_Management.Views.ShoppingListPage(); }
-        private object Activate_22_StockManagementPage() { return new global::Restaurant_Management.Views.StockManagementPage(); }
-        private object Activate_23_TableManagementPage() { return new global::Restaurant_Management.Views.TableManagementPage(); }
-        private object Activate_24_NumberBox() { return new global::Microsoft.UI.Xaml.Controls.NumberBox(); }
-        private object Activate_35_WaiterPage() { return new global::Restaurant_Management.Views.WaiterPage(); }
-        private object Activate_36_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_16_EmployeeManagementPage() { return new global::Restaurant_Management.Views.EmployeeManagementPage(); }
+        private object Activate_17_EmployeeSchedulePage() { return new global::Restaurant_Management.Views.EmployeeSchedulePage(); }
+        private object Activate_18_KitchenChefPage() { return new global::Restaurant_Management.Views.KitchenChefPage(); }
+        private object Activate_19_LoginPage() { return new global::Restaurant_Management.Views.LoginPage(); }
+        private object Activate_20_MenuManagementPage() { return new global::Restaurant_Management.Views.MenuManagementPage(); }
+        private object Activate_21_OrderManagementPage() { return new global::Restaurant_Management.Views.OrderManagementPage(); }
+        private object Activate_22_ShoppingListPage() { return new global::Restaurant_Management.Views.ShoppingListPage(); }
+        private object Activate_23_StockManagementPage() { return new global::Restaurant_Management.Views.StockManagementPage(); }
+        private object Activate_24_TableManagementPage() { return new global::Restaurant_Management.Views.TableManagementPage(); }
+        private object Activate_25_NumberBox() { return new global::Microsoft.UI.Xaml.Controls.NumberBox(); }
+        private object Activate_36_WaiterPage() { return new global::Restaurant_Management.Views.WaiterPage(); }
+        private object Activate_37_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
         private void StaticInitializer_4_MicaBackdrop() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Media.MicaBackdrop).TypeHandle);
         private void StaticInitializer_6_MicaKind() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Composition.SystemBackdrops.MicaKind).TypeHandle);
@@ -367,21 +370,22 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
         private void StaticInitializer_9_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.MainWindow).TypeHandle);
         private void StaticInitializer_12_AdminHomePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.AdminHomePage).TypeHandle);
         private void StaticInitializer_15_DashboardPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.DashboardPage).TypeHandle);
-        private void StaticInitializer_16_EmployeeSchedulePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.EmployeeSchedulePage).TypeHandle);
-        private void StaticInitializer_17_KitchenChefPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.KitchenChefPage).TypeHandle);
-        private void StaticInitializer_18_LoginPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.LoginPage).TypeHandle);
-        private void StaticInitializer_19_MenuManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.MenuManagementPage).TypeHandle);
-        private void StaticInitializer_20_OrderManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.OrderManagementPage).TypeHandle);
-        private void StaticInitializer_21_ShoppingListPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.ShoppingListPage).TypeHandle);
-        private void StaticInitializer_22_StockManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.StockManagementPage).TypeHandle);
-        private void StaticInitializer_23_TableManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.TableManagementPage).TypeHandle);
-        private void StaticInitializer_24_NumberBox() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NumberBox).TypeHandle);
-        private void StaticInitializer_27_NumberBoxSpinButtonPlacementMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode).TypeHandle);
-        private void StaticInitializer_29_INumberFormatter2() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2).TypeHandle);
-        private void StaticInitializer_34_NumberBoxValidationMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode).TypeHandle);
-        private void StaticInitializer_35_WaiterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.WaiterPage).TypeHandle);
-        private void StaticInitializer_36_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_38_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_16_EmployeeManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.EmployeeManagementPage).TypeHandle);
+        private void StaticInitializer_17_EmployeeSchedulePage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.EmployeeSchedulePage).TypeHandle);
+        private void StaticInitializer_18_KitchenChefPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.KitchenChefPage).TypeHandle);
+        private void StaticInitializer_19_LoginPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.LoginPage).TypeHandle);
+        private void StaticInitializer_20_MenuManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.MenuManagementPage).TypeHandle);
+        private void StaticInitializer_21_OrderManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.OrderManagementPage).TypeHandle);
+        private void StaticInitializer_22_ShoppingListPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.ShoppingListPage).TypeHandle);
+        private void StaticInitializer_23_StockManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.StockManagementPage).TypeHandle);
+        private void StaticInitializer_24_TableManagementPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.TableManagementPage).TypeHandle);
+        private void StaticInitializer_25_NumberBox() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NumberBox).TypeHandle);
+        private void StaticInitializer_28_NumberBoxSpinButtonPlacementMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode).TypeHandle);
+        private void StaticInitializer_30_INumberFormatter2() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Windows.Globalization.NumberFormatting.INumberFormatter2).TypeHandle);
+        private void StaticInitializer_35_NumberBoxValidationMode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode).TypeHandle);
+        private void StaticInitializer_36_WaiterPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Restaurant_Management.Views.WaiterPage).TypeHandle);
+        private void StaticInitializer_37_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_39_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -389,7 +393,7 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_38_IList(object instance, object item)
+        private void VectorAdd_39_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -500,74 +504,82 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 16:   //  Restaurant_Management.Views.EmployeeSchedulePage
+            case 16:   //  Restaurant_Management.Views.EmployeeManagementPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_EmployeeSchedulePage;
-                userType.StaticInitializer = StaticInitializer_16_EmployeeSchedulePage;
+                userType.Activator = Activate_16_EmployeeManagementPage;
+                userType.StaticInitializer = StaticInitializer_16_EmployeeManagementPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  Restaurant_Management.Views.KitchenChefPage
+            case 17:   //  Restaurant_Management.Views.EmployeeSchedulePage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_KitchenChefPage;
-                userType.StaticInitializer = StaticInitializer_17_KitchenChefPage;
+                userType.Activator = Activate_17_EmployeeSchedulePage;
+                userType.StaticInitializer = StaticInitializer_17_EmployeeSchedulePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Restaurant_Management.Views.LoginPage
+            case 18:   //  Restaurant_Management.Views.KitchenChefPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_LoginPage;
-                userType.StaticInitializer = StaticInitializer_18_LoginPage;
+                userType.Activator = Activate_18_KitchenChefPage;
+                userType.StaticInitializer = StaticInitializer_18_KitchenChefPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  Restaurant_Management.Views.MenuManagementPage
+            case 19:   //  Restaurant_Management.Views.LoginPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_MenuManagementPage;
-                userType.StaticInitializer = StaticInitializer_19_MenuManagementPage;
+                userType.Activator = Activate_19_LoginPage;
+                userType.StaticInitializer = StaticInitializer_19_LoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Restaurant_Management.Views.OrderManagementPage
+            case 20:   //  Restaurant_Management.Views.MenuManagementPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_OrderManagementPage;
-                userType.StaticInitializer = StaticInitializer_20_OrderManagementPage;
+                userType.Activator = Activate_20_MenuManagementPage;
+                userType.StaticInitializer = StaticInitializer_20_MenuManagementPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Restaurant_Management.Views.ShoppingListPage
+            case 21:   //  Restaurant_Management.Views.OrderManagementPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_ShoppingListPage;
-                userType.StaticInitializer = StaticInitializer_21_ShoppingListPage;
+                userType.Activator = Activate_21_OrderManagementPage;
+                userType.StaticInitializer = StaticInitializer_21_OrderManagementPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Restaurant_Management.Views.StockManagementPage
+            case 22:   //  Restaurant_Management.Views.ShoppingListPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_StockManagementPage;
-                userType.StaticInitializer = StaticInitializer_22_StockManagementPage;
+                userType.Activator = Activate_22_ShoppingListPage;
+                userType.StaticInitializer = StaticInitializer_22_ShoppingListPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Restaurant_Management.Views.TableManagementPage
+            case 23:   //  Restaurant_Management.Views.StockManagementPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_23_TableManagementPage;
-                userType.StaticInitializer = StaticInitializer_23_TableManagementPage;
+                userType.Activator = Activate_23_StockManagementPage;
+                userType.StaticInitializer = StaticInitializer_23_StockManagementPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  Microsoft.UI.Xaml.Controls.NumberBox
+            case 24:   //  Restaurant_Management.Views.TableManagementPage
+                userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_24_TableManagementPage;
+                userType.StaticInitializer = StaticInitializer_24_TableManagementPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  Microsoft.UI.Xaml.Controls.NumberBox
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_24_NumberBox;
-                userType.StaticInitializer = StaticInitializer_24_NumberBox;
+                userType.Activator = Activate_25_NumberBox;
+                userType.StaticInitializer = StaticInitializer_25_NumberBox;
                 userType.AddMemberName("Minimum");
                 userType.AddMemberName("Maximum");
                 userType.AddMemberName("Value");
@@ -590,70 +602,70 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 25:   //  Microsoft.UI.Xaml.Controls.Control
+            case 26:   //  Microsoft.UI.Xaml.Controls.Control
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  Double
+            case 27:   //  Double
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 27:   //  Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode
+            case 28:   //  Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_27_NumberBoxSpinButtonPlacementMode;
+                userType.StaticInitializer = StaticInitializer_28_NumberBoxSpinButtonPlacementMode;
                 userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Hidden);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Compact);
                 userType.AddEnumValue("Inline", global::Microsoft.UI.Xaml.Controls.NumberBoxSpinButtonPlacementMode.Inline);
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.DataTemplate
+            case 29:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  Windows.Globalization.NumberFormatting.INumberFormatter2
+            case 30:   //  Windows.Globalization.NumberFormatting.INumberFormatter2
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_29_INumberFormatter2;
+                userType.StaticInitializer = StaticInitializer_30_INumberFormatter2;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 30:   //  String
+            case 31:   //  String
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
+            case 32:   //  Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
+            case 33:   //  Microsoft.UI.Xaml.Media.SolidColorBrush
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Microsoft.UI.Xaml.TextReadingOrder
+            case 34:   //  Microsoft.UI.Xaml.TextReadingOrder
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.NumberBoxValidationMode
+            case 35:   //  Microsoft.UI.Xaml.Controls.NumberBoxValidationMode
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.StaticInitializer = StaticInitializer_34_NumberBoxValidationMode;
+                userType.StaticInitializer = StaticInitializer_35_NumberBoxValidationMode;
                 userType.AddEnumValue("InvalidInputOverwritten", global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode.InvalidInputOverwritten);
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NumberBoxValidationMode.Disabled);
                 xamlType = userType;
                 break;
 
-            case 35:   //  Restaurant_Management.Views.WaiterPage
+            case 36:   //  Restaurant_Management.Views.WaiterPage
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_WaiterPage;
-                userType.StaticInitializer = StaticInitializer_35_WaiterPage;
+                userType.Activator = Activate_36_WaiterPage;
+                userType.StaticInitializer = StaticInitializer_36_WaiterPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 37:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_36_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_36_TreeViewNode;
+                userType.Activator = Activate_37_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_37_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -665,19 +677,19 @@ namespace Restaurant_Management.Restaurant_Management_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.DependencyObject
+            case 38:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 39:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_38_IList;
-                userType.CollectionAdd = VectorAdd_38_IList;
+                userType.StaticInitializer = StaticInitializer_39_IList;
+                userType.CollectionAdd = VectorAdd_39_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 39:   //  Int32
+            case 40:   //  Int32
                 xamlType = new global::Restaurant_Management.Restaurant_Management_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }

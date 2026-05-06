@@ -10,26 +10,23 @@ namespace Restaurant_Management.Data
 
         static DbHelper()
         {
-            string databaseFileName = "Restaurant_DB.mdf";
+            string databasePath = FindDatabaseFile("Restaurant_DB.mdf");
 
-            string databasePath = FindDatabaseFile(databaseFileName);
-
-            if (databasePath == "")
+            if (string.IsNullOrEmpty(databasePath))
             {
-                throw new FileNotFoundException("Nu am gasit baza de date: " + databaseFileName);
+                throw new FileNotFoundException("Nu am gasit fisierul Restaurant_DB.mdf.");
             }
 
-            string databaseFolder = Path.GetDirectoryName(databasePath)!;
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-            AppDomain.CurrentDomain.SetData("DataDirectory", databaseFolder);
+            builder.DataSource = @"(LocalDB)\RestaurantLocalDB";
+            builder.AttachDBFilename = databasePath;
+            builder.IntegratedSecurity = true;
+            builder.ConnectTimeout = 30;
+            builder.Encrypt = false;
+            builder.TrustServerCertificate = true;
 
-            connectionString =
-                @"Data Source=(LocalDB)\MSSQLLocalDB;" +
-                @"AttachDbFilename=|DataDirectory|\Restaurant_DB.mdf;" +
-                @"Integrated Security=True;" +
-                @"Connect Timeout=30;" +
-                @"Encrypt=False;" +
-                @"TrustServerCertificate=True;";
+            connectionString = builder.ConnectionString;
         }
 
         public static SqlConnection GetConnection()
@@ -50,14 +47,14 @@ namespace Restaurant_Management.Data
                     return possiblePath;
                 }
 
-                DirectoryInfo? parent = Directory.GetParent(currentFolder);
+                DirectoryInfo? parentFolder = Directory.GetParent(currentFolder);
 
-                if (parent == null)
+                if (parentFolder == null)
                 {
                     break;
                 }
 
-                currentFolder = parent.FullName;
+                currentFolder = parentFolder.FullName;
             }
 
             return "";

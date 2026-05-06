@@ -7,7 +7,7 @@ namespace Restaurant_Management.Views
 {
     public sealed partial class AdminHomePage : Page
     {
-        private readonly AdminRouteService _adminRouteService;
+        private readonly AdminRouteService adminRouteService;
 
         public AdminHomePage()
         {
@@ -16,34 +16,34 @@ namespace Restaurant_Management.Views
             INavigationService navigationService =
                 new FrameNavigationService(MainWindow.Instance.AppFrame);
 
-            _adminRouteService =
+            adminRouteService =
                 new AdminRouteService(navigationService);
         }
 
         private void AdminButton_Click(object sender, RoutedEventArgs e)
         {
-            Button clickedButton = sender as Button;
+            Button button = sender as Button;
 
-            if (clickedButton == null)
+            if (button == null)
             {
                 return;
             }
 
-            string routeName = clickedButton.Tag as string;
+            string routeName = button.Tag as string;
 
             if (string.IsNullOrWhiteSpace(routeName))
             {
                 return;
             }
 
-            bool routeIsValid = Enum.TryParse(routeName, out AdminRoute route);
+            bool isValidRoute = Enum.TryParse(routeName, out AdminRoute route);
 
-            if (routeIsValid == false)
+            if (isValidRoute == false)
             {
                 return;
             }
 
-            _adminRouteService.Navigate(route);
+            adminRouteService.Navigate(route);
         }
     }
 }

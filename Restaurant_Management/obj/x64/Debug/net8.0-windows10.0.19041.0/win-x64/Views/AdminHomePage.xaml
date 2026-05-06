@@ -2,45 +2,56 @@
     x:Class="Restaurant_Management.Views.AdminHomePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="#B19149">
+    Background="#0F172A">
 
     <Page.Resources>
+        <SolidColorBrush x:Key="PageBackgroundBrush" Color="#0F172A"/>
+        <SolidColorBrush x:Key="CardBackgroundBrush" Color="#1E293B"/>
+        <SolidColorBrush x:Key="CardBorderBrush" Color="#334155"/>
+        <SolidColorBrush x:Key="PrimaryTextBrush" Color="#F8FAFC"/>
+        <SolidColorBrush x:Key="SecondaryTextBrush" Color="#CBD5E1"/>
+        <SolidColorBrush x:Key="GrayButtonBrush" Color="#334155"/>
 
         <Style x:Key="AdminButtonStyle" TargetType="Button">
-            <Setter Property="Height" Value="100"/>
+            <Setter Property="Height" Value="110"/>
             <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+            <Setter Property="Background" Value="{StaticResource CardBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="20"/>
         </Style>
 
         <Style x:Key="AdminButtonTitleStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="TextAlignment" Value="Center"/>
         </Style>
 
         <Style x:Key="AdminButtonDescriptionStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="14"/>
-            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Foreground" Value="{StaticResource SecondaryTextBrush}"/>
+            <Setter Property="TextAlignment" Value="Center"/>
         </Style>
-
     </Page.Resources>
 
-    <ScrollViewer>
+    <ScrollViewer Background="{StaticResource PageBackgroundBrush}">
         <StackPanel Padding="30" Spacing="25">
 
             <TextBlock
                 Text="Panou Administrare"
                 FontSize="32"
-                FontWeight="Bold"/>
+                FontWeight="Bold"
+                Foreground="{StaticResource PrimaryTextBrush}"/>
 
             <TextBlock
                 Text="Alege una dintre optiunile de administrare"
                 FontSize="18"
-                Foreground="Black"/>
+                Foreground="{StaticResource SecondaryTextBrush}"/>
 
-            <Grid ColumnSpacing="20" RowSpacing="10">
-
+            <Grid ColumnSpacing="20" RowSpacing="12">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -52,14 +63,15 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:ConnectionId='4'
+                <!-- Gestionare meniu -->
+                <Button x:ConnectionId='3'
                     Grid.Row="0"
                     Grid.Column="0"
                     Style="{StaticResource AdminButtonStyle}"
                     Tag="Menu"
                                              >
 
-                    <StackPanel>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
                         <TextBlock
                             Text="Gestionarea meniului"
                             Style="{StaticResource AdminButtonTitleStyle}"/>
@@ -70,32 +82,15 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='5'
+                <!-- Gestionare comenzi -->
+                <Button x:ConnectionId='4'
                     Grid.Row="0"
                     Grid.Column="1"
-                    Style="{StaticResource AdminButtonStyle}"
-                    Tag="Tables"
-                                             >
-
-                    <StackPanel>
-                        <TextBlock
-                            Text="Gestionarea meselor"
-                            Style="{StaticResource AdminButtonTitleStyle}"/>
-
-                        <TextBlock
-                            Text="Organizare si starea meselor"
-                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
-                    </StackPanel>
-                </Button>
-
-                <Button x:ConnectionId='6'
-                    Grid.Row="1"
-                    Grid.Column="0"
                     Style="{StaticResource AdminButtonStyle}"
                     Tag="Orders"
                                              >
 
-                    <StackPanel>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
                         <TextBlock
                             Text="Gestionarea comenzilor"
                             Style="{StaticResource AdminButtonTitleStyle}"/>
@@ -106,32 +101,15 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='7'
+                <!-- Lista cumparaturi -->
+                <Button x:ConnectionId='5'
                     Grid.Row="1"
-                    Grid.Column="1"
-                    Style="{StaticResource AdminButtonStyle}"
-                    Tag="Stock"
-                                             >
-
-                    <StackPanel>
-                        <TextBlock
-                            Text="Gestionarea stocului"
-                            Style="{StaticResource AdminButtonTitleStyle}"/>
-
-                        <TextBlock
-                            Text="Produse si cantitati disponibile"
-                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
-                    </StackPanel>
-                </Button>
-
-                <Button x:ConnectionId='8'
-                    Grid.Row="2"
                     Grid.Column="0"
                     Style="{StaticResource AdminButtonStyle}"
                     Tag="Shopping"
                                              >
 
-                    <StackPanel>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
                         <TextBlock
                             Text="Lista cumparaturi / aprovizionare"
                             Style="{StaticResource AdminButtonTitleStyle}"/>
@@ -142,14 +120,15 @@
                     </StackPanel>
                 </Button>
 
-                <Button x:ConnectionId='9'
-                    Grid.Row="2"
+                <!-- Program angajati -->
+                <Button x:ConnectionId='6'
+                    Grid.Row="1"
                     Grid.Column="1"
                     Style="{StaticResource AdminButtonStyle}"
                     Tag="Employees"
                                              >
 
-                    <StackPanel>
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
                         <TextBlock
                             Text="Program angajati"
                             Style="{StaticResource AdminButtonTitleStyle}"/>
@@ -160,22 +139,38 @@
                     </StackPanel>
                 </Button>
 
+                <!-- Gestionare angajati -->
+                <Button x:ConnectionId='7'
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource AdminButtonStyle}"
+                    Tag="EmployeesManagement"
+                                             >
+
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="6">
+                        <TextBlock
+                            Text="Gestionare angajati"
+                            Style="{StaticResource AdminButtonTitleStyle}"/>
+
+                        <TextBlock
+                            Text="Adauga, editeaza si sterge angajati"
+                            Style="{StaticResource AdminButtonDescriptionStyle}"/>
+                    </StackPanel>
+                </Button>
             </Grid>
 
             <Button x:ConnectionId='2'
-                Content="Dashboard / Statistici"
-                Height="90"
-                FontSize="20"
-                FontWeight="SemiBold"
-                Tag="Dashboard"
-                                         />
-
-            <Button x:ConnectionId='3'
                 Content="Delogare"
                 Height="45"
+                Width="120"
                 HorizontalAlignment="Left"
                 Tag="Logout"
-                                         />
+                                         
+                Background="{StaticResource GrayButtonBrush}"
+                Foreground="White"
+                BorderBrush="{StaticResource CardBorderBrush}"
+                BorderThickness="1"/>
 
         </StackPanel>
     </ScrollViewer>

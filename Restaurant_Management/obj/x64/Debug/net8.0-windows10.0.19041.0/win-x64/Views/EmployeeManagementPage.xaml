@@ -1,0 +1,301 @@
+﻿<Page
+    x:Class="Restaurant_Management.Views.EmployeeManagementPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="#0F172A">
+
+    <Page.Resources>
+        <SolidColorBrush x:Key="CardBackgroundBrush" Color="#111827"/>
+        <SolidColorBrush x:Key="CardBorderBrush" Color="#334155"/>
+        <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="#1E293B"/>
+        <SolidColorBrush x:Key="PrimaryTextBrush" Color="#F8FAFC"/>
+        <SolidColorBrush x:Key="SecondaryTextBrush" Color="#CBD5E1"/>
+        <SolidColorBrush x:Key="MutedTextBrush" Color="#94A3B8"/>
+        <SolidColorBrush x:Key="InputBackgroundBrush" Color="#0F172A"/>
+
+        <SolidColorBrush x:Key="BlueButtonBrush" Color="#2563EB"/>
+        <SolidColorBrush x:Key="YellowButtonBrush" Color="#CA8A04"/>
+        <SolidColorBrush x:Key="RedButtonBrush" Color="#DC2626"/>
+        <SolidColorBrush x:Key="GrayButtonBrush" Color="#334155"/>
+
+        <Style x:Key="CardStyle" TargetType="Border">
+            <Setter Property="Background" Value="{StaticResource CardBackgroundBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="10"/>
+            <Setter Property="Padding" Value="20"/>
+        </Style>
+
+        <Style x:Key="PageTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="PageSubtitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="{StaticResource SecondaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+        </Style>
+
+        <Style x:Key="LabelStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Foreground" Value="{StaticResource MutedTextBrush}"/>
+            <Setter Property="Margin" Value="0,0,0,4"/>
+        </Style>
+
+        <Style x:Key="InputTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="{StaticResource InputBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="PlaceholderForeground" Value="{StaticResource MutedTextBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="BlueButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource BlueButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource BlueButtonBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="YellowButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource YellowButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource YellowButtonBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="RedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource RedButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource RedButtonBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="GrayButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource GrayButtonBrush}"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="TableHeaderTextStyle" TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="TableTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Padding="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Spacing="8">
+                <TextBlock
+                    Text="Gestionare Angajati"
+                    Style="{StaticResource PageTitleStyle}"/>
+
+                <TextBlock
+                    Text="Aici managerul poate adauga, edita si sterge conturi pentru angajatii restaurantului."
+                    Style="{StaticResource PageSubtitleStyle}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+                <Button x:ConnectionId='12'
+                    Content="Refresh"
+                                               
+                    Style="{StaticResource BlueButtonStyle}"/>
+
+                <Button x:ConnectionId='13'
+                    Content="Inapoi"
+                                            
+                    Style="{StaticResource GrayButtonStyle}"/>
+            </StackPanel>
+        </Grid>
+
+        <Border
+            Grid.Row="1"
+            Style="{StaticResource CardStyle}"
+            Margin="0,0,0,20">
+
+            <Grid ColumnSpacing="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.3*"/>
+                    <ColumnDefinition Width="1.3*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="1.2*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBlock Text="Username" Style="{StaticResource LabelStyle}"/>
+
+                    <TextBox x:ConnectionId='11'
+                        x:Name="UsernameBox"
+                        PlaceholderText="Ex: ospatar2"
+                        Style="{StaticResource InputTextBoxStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="Parola" Style="{StaticResource LabelStyle}"/>
+
+                    <TextBox x:ConnectionId='10'
+                        x:Name="PasswordBox"
+                        PlaceholderText="Ex: 1234"
+                        Style="{StaticResource InputTextBoxStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2">
+                    <TextBlock Text="Nume complet" Style="{StaticResource LabelStyle}"/>
+
+                    <TextBox x:ConnectionId='9'
+                        x:Name="FullNameBox"
+                        PlaceholderText="Ex: Popescu Andrei"
+                        Style="{StaticResource InputTextBoxStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="3">
+                    <TextBlock Text="Rol" Style="{StaticResource LabelStyle}"/>
+
+                    <ComboBox x:ConnectionId='8'
+                        x:Name="RoleComboBox"
+                        Height="40"
+                        Background="{StaticResource InputBackgroundBrush}"
+                        Foreground="{StaticResource PrimaryTextBrush}"
+                        BorderBrush="{StaticResource CardBorderBrush}"
+                        PlaceholderText="Alege rol"/>
+                </StackPanel>
+
+                <Button x:ConnectionId='6'
+                    Grid.Column="4"
+                    x:Name="SaveButton"
+                    Content="Salveaza"
+                                            
+                    Style="{StaticResource BlueButtonStyle}"
+                    VerticalAlignment="Bottom"/>
+
+                <Button x:ConnectionId='7'
+                    Grid.Column="5"
+                    Content="Curata"
+                                             
+                    Style="{StaticResource GrayButtonStyle}"
+                    VerticalAlignment="Bottom"/>
+            </Grid>
+        </Border>
+
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock
+                    Grid.Row="0"
+                    Text="Lista angajati"
+                    Style="{StaticResource SectionTitleStyle}"
+                    Margin="0,0,0,12"/>
+
+                <ListView x:ConnectionId='2'
+                    Grid.Row="1"
+                    x:Name="EmployeeListView"
+                    SelectionMode="None"
+                    Background="Transparent"
+                    BorderThickness="0">
+
+                    <ListView.Header>
+                        <Grid Padding="12,10" Background="{StaticResource HeaderBackgroundBrush}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="70"/>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="1.5*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1.2*"/>
+                                <ColumnDefinition Width="190"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Grid.Column="0" Text="ID" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="1" Text="Username" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="2" Text="Parola" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="3" Text="Nume complet" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="4" Text="Rol" Style="{StaticResource TableHeaderTextStyle}"/>
+                            <TextBlock Grid.Column="5" Text="Actiuni" Style="{StaticResource TableHeaderTextStyle}"/>
+                        </Grid>
+                    </ListView.Header>
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                BorderBrush="{StaticResource CardBorderBrush}"
+                                BorderThickness="0,0,0,1"
+                                Padding="12,10">
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="2*"/>
+                                        <ColumnDefinition Width="1.2*"/>
+                                        <ColumnDefinition Width="190"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" Text="{Binding Id}" Style="{StaticResource TableTextStyle}"/>
+                                    <TextBlock Grid.Column="1" Text="{Binding Username}" Style="{StaticResource TableTextStyle}"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding Password}" Style="{StaticResource TableTextStyle}"/>
+                                    <TextBlock Grid.Column="3" Text="{Binding FullName}" Style="{StaticResource TableTextStyle}"/>
+                                    <TextBlock Grid.Column="4" Text="{Binding Role}" Style="{StaticResource TableTextStyle}"/>
+
+                                    <StackPanel
+                                        Grid.Column="5"
+                                        Orientation="Horizontal"
+                                        Spacing="8"
+                                        VerticalAlignment="Center">
+
+                                        <Button x:ConnectionId='4'
+                                            Content="Edit"
+                                                                    
+                                            Style="{StaticResource YellowButtonStyle}"/>
+
+                                        <Button x:ConnectionId='5'
+                                            Content="Sterge"
+                                                                      
+                                            Style="{StaticResource RedButtonStyle}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
+

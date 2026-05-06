@@ -3,6 +3,7 @@ D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\ne
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeManagementPage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xbf
@@ -359,6 +360,8 @@ D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\ne
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.g.cs
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.g.i.cs
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.g.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeManagementPage.g.i.cs
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeManagementPage.g.cs
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.g.i.cs
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.g.cs
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.g.i.cs
@@ -382,6 +385,7 @@ D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\ne
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xaml
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xaml
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xaml
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeManagementPage.xaml
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xaml
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.xaml
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xaml
@@ -395,6 +399,7 @@ D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\ne
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\AdminHomePage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\DashboardPage.xbf
+D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeManagementPage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\EmployeeSchedulePage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\KitchenChefPage.xbf
 D:\Faculta\An3_sem2\II\Proiect\Proiect-II\Restaurant_Management\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Views\LoginPage.xbf

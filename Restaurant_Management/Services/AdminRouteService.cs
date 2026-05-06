@@ -6,36 +6,34 @@ namespace Restaurant_Management.Services
 {
     public class AdminRouteService
     {
-        private readonly INavigationService _navigationService;
+        private readonly INavigationService navigationService;
 
-        private readonly Dictionary<AdminRoute, Type> _pages = new Dictionary<AdminRoute, Type>
+        private readonly Dictionary<AdminRoute, Type> pages = new Dictionary<AdminRoute, Type>
         {
             { AdminRoute.AdminHome, typeof(AdminHomePage) },
             { AdminRoute.Menu, typeof(MenuManagementPage) },
-            { AdminRoute.Tables, typeof(TableManagementPage) },
             { AdminRoute.Orders, typeof(OrderManagementPage) },
-            { AdminRoute.Stock, typeof(StockManagementPage) },
             { AdminRoute.Shopping, typeof(ShoppingListPage) },
             { AdminRoute.Employees, typeof(EmployeeSchedulePage) },
-            { AdminRoute.Dashboard, typeof(DashboardPage) },
+            { AdminRoute.EmployeesManagement, typeof(EmployeeManagementPage) },
             { AdminRoute.Logout, typeof(LoginPage) }
         };
 
         public AdminRouteService(INavigationService navigationService)
         {
-            _navigationService = navigationService;
+            this.navigationService = navigationService;
         }
 
         public bool Navigate(AdminRoute route)
         {
-            if (_pages.ContainsKey(route) == false)
+            if (pages.ContainsKey(route) == false)
             {
                 return false;
             }
 
-            Type pageType = _pages[route];
+            Type pageType = pages[route];
 
-            return _navigationService.NavigateTo(pageType);
+            return navigationService.NavigateTo(pageType);
         }
     }
 }

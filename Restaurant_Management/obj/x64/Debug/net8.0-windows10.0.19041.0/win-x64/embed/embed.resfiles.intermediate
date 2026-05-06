@@ -2,6 +2,7 @@ App.xbf
 MainWindow.xbf
 Views\AdminHomePage.xbf
 Views\DashboardPage.xbf
+Views\EmployeeManagementPage.xbf
 Views\EmployeeSchedulePage.xbf
 Views\KitchenChefPage.xbf
 Views\LoginPage.xbf

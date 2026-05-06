@@ -4,12 +4,10 @@
     {
         AdminHome,
         Menu,
-        Tables,
         Orders,
-        Stock,
         Shopping,
         Employees,
-        Dashboard,
+        EmployeesManagement,
         Logout
     }
 }
