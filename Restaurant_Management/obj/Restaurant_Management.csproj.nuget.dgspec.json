@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {}
+    "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Third_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {}
   },
   "projects": {
-    "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {
+    "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Third_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
+        "projectUniqueName": "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Third_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
         "projectName": "Restaurant_Management",
-        "projectPath": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
-        "packagesPath": "C:\\Users\\salag\\.nuget\\packages\\",
-        "outputPath": "D:\\Faculta\\An3_sem2\\II\\Proiect\\Proiect-II\\Restaurant_Management\\obj\\",
+        "projectPath": "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Third_try\\Proiect-II\\Restaurant_Management\\Restaurant_Management.csproj",
+        "packagesPath": "C:\\Users\\Laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\AC_UTCN\\AN_3\\SEM2\\II - Informatica Industriala\\Proiect\\Code\\Third_try\\Proiect-II\\Restaurant_Management\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Visual Studio\\Shared components tools SDKs\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\salag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +46,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0-windows10.0.19041.0": {
@@ -93,27 +94,27 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-arm64",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x86",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -121,15 +122,15 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-              "version": "[8.0.26, 8.0.26]"
+              "version": "[8.0.27, 8.0.27]"
             }
           ],
           "frameworkReferences": {
@@ -140,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

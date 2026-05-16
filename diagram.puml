@@ -1,0 +1,766 @@
+@startuml RestaurantManagement
+
+skinparam classAttributeIconSize 0
+skinparam groupInheritance 2
+skinparam linetype ortho
+hide empty members
+
+' ─────────────────────────────────────────────
+'  PACKAGES
+' ─────────────────────────────────────────────
+
+package "Models" #EEEEEE {
+
+    class AppUser {
+        +FullName : string
+        +Role : string
+    }
+
+    class UserRole <<static>> {
+        +{static} Manager : string
+        +{static} Waiter  : string
+        +{static} Chef    : string
+    }
+
+    class LoginResult {
+        +Success : bool
+        +Message : string
+        +User    : AppUser?
+        +{static} Ok(user)     : LoginResult
+        +{static} Failed(msg)  : LoginResult
+    }
+
+    class EmployeeAccount {
+        +Id       : int
+        +Username : string
+        +Password : string
+        +FullName : string
+        +Role     : string
+    }
+
+    class EmployeeAccountInput {
+        +Username : string
+        +Password : string
+        +FullName : string
+        +Role     : string
+    }
+
+    class EmployeeAccountValidationResult {
+        +IsValid       : bool
+        +ErrorMessage  : string
+        +Employee      : EmployeeAccount
+        +{static} Success(e)  : EmployeeAccountValidationResult
+        +{static} Failed(msg) : EmployeeAccountValidationResult
+    }
+
+    class EmployeeUser {
+        +UserId   : int
+        +FullName : string
+        +Role     : string
+    }
+
+    class EmployeeSchedule {
+        +ScheduleId    : int
+        +UserId        : int
+        +EmployeeName  : string
+        +Role          : string
+        +WorkDate      : DateTime
+        +StartTime     : TimeSpan
+        +EndTime       : TimeSpan
+        +Notes         : string
+    }
+
+    class EmployeeScheduleInput {
+        +UserId       : int
+        +EmployeeName : string
+        +Role         : string
+        +WorkDate     : DateTime
+        +StartTime    : TimeSpan
+        +EndTime      : TimeSpan
+        +Notes        : string
+    }
+
+    class EmployeeScheduleValidationResult {
+        +IsValid      : bool
+        +ErrorMessage : string
+        +Schedule     : EmployeeSchedule
+        +{static} Success(s)  : EmployeeScheduleValidationResult
+        +{static} Failed(msg) : EmployeeScheduleValidationResult
+    }
+
+    class MenuProduct {
+        +MenuId      : int
+        +Name        : string
+        +Category    : string
+        +Price       : decimal
+        +IsAvailable : bool
+    }
+
+    class MenuProductInput {
+        +Name        : string
+        +Category    : string
+        +PriceText   : string
+        +IsAvailable : bool
+    }
+
+    class MenuValidationResult {
+        +IsValid      : bool
+        +ErrorMessage : string
+        +Product      : MenuProduct
+        +{static} Success(p)  : MenuValidationResult
+        +{static} Failed(msg) : MenuValidationResult
+    }
+
+    class RestaurantMenuItem {
+        +MenuId      : int
+        +Name        : string
+        +Category    : string
+        +Price       : decimal
+        +IsAvailable : bool
+    }
+
+    class AdminOrder {
+        +OrderId      : int
+        +TableNumber  : int
+        +WaiterName   : string
+        +Details      : string
+        +Status       : string
+        +SentAt       : DateTime
+    }
+
+    class ChefOrder {
+        +OrderId     : int
+        +TableNumber : int
+        +WaiterName  : string
+        +Details     : string
+        +Status      : string
+        +SentAt      : DateTime
+    }
+
+    class WaiterOrder {
+        +OrderId     : int
+        +TableNumber : int
+        +Details     : string
+        +Status      : string
+        +SentAt      : DateTime
+    }
+
+    class ChefOrderStatus <<static>> {
+        +{static} All       : string
+        +{static} Received  : string
+        +{static} Preparing : string
+        +{static} Done      : string
+    }
+
+    class RestaurantOrderStatus <<static>> {
+        +{static} Received  : string
+        +{static} Preparing : string
+        +{static} Done      : string
+    }
+
+    class ShoppingItem {
+        +ShoppingItemId : int
+        +Name           : string
+        +Quantity        : decimal
+        +Unit           : string
+        +IsPurchased    : bool
+        +CreatedAt      : DateTime
+    }
+
+    class ShoppingItemInput {
+        +Name         : string
+        +QuantityText : string
+        +Unit         : string
+        +IsPurchased  : bool
+    }
+
+    class ShoppingValidationResult {
+        +IsValid      : bool
+        +ErrorMessage : string
+        +Item         : ShoppingItem
+        +{static} Success(i)  : ShoppingValidationResult
+        +{static} Failed(msg) : ShoppingValidationResult
+    }
+
+    LoginResult --> AppUser
+    EmployeeAccountValidationResult --> EmployeeAccount
+    EmployeeScheduleValidationResult --> EmployeeSchedule
+    MenuValidationResult --> MenuProduct
+    ShoppingValidationResult --> ShoppingItem
+}
+
+' ─────────────────────────────────────────────
+'  REPOSITORY INTERFACES
+' ─────────────────────────────────────────────
+
+package "Repositories\\Interfaces" #DDEEFF {
+
+    interface IUserRepository {
+        +GetUserByCredentials(username, password) : AppUser?
+    }
+
+    interface IAdminOrderRepository {
+        +GetAllOrders()                        : List<AdminOrder>
+        +UpdateOrderStatus(orderId, newStatus) : void
+        +DeleteOrder(orderId)                  : void
+    }
+
+    interface IOrderRepository {
+        +GetAllOrders()                        : List<ChefOrder>
+        +UpdateOrderStatus(orderId, newStatus) : void
+    }
+
+    interface IWaiterRepository {
+        +GetAvailableMenuItems()               : List<RestaurantMenuItem>
+        +GetOrdersForWaiter(waiterName)        : List<WaiterOrder>
+        +CreateOrder(tableNumber, details, waiterName) : void
+    }
+
+    interface IEmployeeAccountRepository {
+        +GetAllEmployees()             : List<EmployeeAccount>
+        +AddEmployee(employee)         : void
+        +UpdateEmployee(employee)      : void
+        +DeleteEmployee(id)            : void
+    }
+
+    interface IEmployeeScheduleRepository {
+        +GetEmployees()                : List<EmployeeUser>
+        +GetAllSchedules()             : List<EmployeeSchedule>
+        +AddSchedule(schedule)         : void
+        +UpdateSchedule(schedule)      : void
+        +DeleteSchedule(scheduleId)    : void
+    }
+
+    interface IMenuRepository {
+        +GetAllProducts()              : List<MenuProduct>
+        +AddProduct(product)           : void
+        +UpdateProduct(product)        : void
+        +DeleteProduct(menuId)         : void
+    }
+
+    interface IShoppingListRepository {
+        +GetAllItems()                                   : List<ShoppingItem>
+        +AddItem(item)                                   : void
+        +UpdateItem(item)                                : void
+        +UpdatePurchasedStatus(itemId, isPurchased)      : void
+        +DeleteItem(itemId)                              : void
+    }
+}
+
+' ─────────────────────────────────────────────
+'  REPOSITORY IMPLEMENTATIONS
+' ─────────────────────────────────────────────
+
+package "Repositories\\Sql" #DDFFF0 {
+
+    class SqlUserRepository {
+        +GetUserByCredentials(username, password) : AppUser?
+    }
+
+    class SqlAdminOrderRepository {
+        +GetAllOrders()                        : List<AdminOrder>
+        +UpdateOrderStatus(orderId, newStatus) : void
+        +DeleteOrder(orderId)                  : void
+    }
+
+    class SqlOrderRepository {
+        +GetAllOrders()                        : List<ChefOrder>
+        +UpdateOrderStatus(orderId, newStatus) : void
+    }
+
+    class SqlWaiterRepository {
+        +GetAvailableMenuItems()               : List<RestaurantMenuItem>
+        +GetOrdersForWaiter(waiterName)        : List<WaiterOrder>
+        +CreateOrder(tableNumber, details, waiterName) : void
+    }
+
+    class SqlEmployeeAccountRepository {
+        +GetAllEmployees()        : List<EmployeeAccount>
+        +AddEmployee(employee)    : void
+        +UpdateEmployee(employee) : void
+        +DeleteEmployee(id)       : void
+    }
+
+    class SqlEmployeeScheduleRepository {
+        +GetEmployees()            : List<EmployeeUser>
+        +GetAllSchedules()         : List<EmployeeSchedule>
+        +AddSchedule(schedule)     : void
+        +UpdateSchedule(schedule)  : void
+        +DeleteSchedule(scheduleId): void
+    }
+
+    class SqlMenuRepository {
+        +GetAllProducts()          : List<MenuProduct>
+        +AddProduct(product)       : void
+        +UpdateProduct(product)    : void
+        +DeleteProduct(menuId)     : void
+    }
+
+    class SqlShoppingListRepository {
+        +GetAllItems()                              : List<ShoppingItem>
+        +AddItem(item)                              : void
+        +UpdateItem(item)                           : void
+        +UpdatePurchasedStatus(itemId, isPurchased) : void
+        +DeleteItem(itemId)                         : void
+    }
+
+    SqlUserRepository             ..|> IUserRepository
+    SqlAdminOrderRepository       ..|> IAdminOrderRepository
+    SqlOrderRepository            ..|> IOrderRepository
+    SqlWaiterRepository           ..|> IWaiterRepository
+    SqlEmployeeAccountRepository  ..|> IEmployeeAccountRepository
+    SqlEmployeeScheduleRepository ..|> IEmployeeScheduleRepository
+    SqlMenuRepository             ..|> IMenuRepository
+    SqlShoppingListRepository     ..|> IShoppingListRepository
+}
+
+' ─────────────────────────────────────────────
+'  SERVICE INTERFACES
+' ─────────────────────────────────────────────
+
+package "Services\\Interfaces" #FFEEDD {
+
+    interface ILoginService {
+        +Login(username, password) : LoginResult
+    }
+
+    interface INavigationService {
+        +NavigateTo(pageType)            : bool
+        +NavigateTo(pageType, parameter) : bool
+    }
+
+    interface IRoleNavigationService {
+        +NavigateByRole(user) : bool
+    }
+
+    interface IEmployeeAccountValidator {
+        +Validate(input) : EmployeeAccountValidationResult
+    }
+
+    interface IEmployeeScheduleValidator {
+        +Validate(input) : EmployeeScheduleValidationResult
+    }
+
+    interface IMenuProductValidator {
+        +Validate(input) : MenuValidationResult
+    }
+
+    interface IShoppingItemValidator {
+        +Validate(input) : ShoppingValidationResult
+    }
+
+    interface IOrderFilterService {
+        +FilterOrders(orders, selectedStatus) : List<ChefOrder>
+    }
+
+    interface IAdminOrderFilterService {
+        +FilterOrders(orders, selectedStatus) : List<AdminOrder>
+    }
+
+    interface IOrderStatusColorService {
+        +GetStatusColor(status) : SolidColorBrush
+    }
+
+    interface IAdminOrderStatusColorService {
+        +GetColor(status) : SolidColorBrush
+    }
+
+    interface IWaiterStatusColorService {
+        +GetStatusColor(status) : SolidColorBrush
+    }
+
+    interface IShoppingItemFilterService {
+        +FilterItems(items, filter) : List<ShoppingItem>
+    }
+
+    interface IOrderLineBuilderService {
+        +BuildOrderLine(menuItem, quantity) : string
+    }
+}
+
+' ─────────────────────────────────────────────
+'  SERVICE IMPLEMENTATIONS
+' ─────────────────────────────────────────────
+
+package "Services\\Impl" #FFF0DD {
+
+    class LoginService {
+        -_repo : IUserRepository
+        +Login(username, password) : LoginResult
+    }
+
+    class FrameNavigationService {
+        -_frame : Frame
+        +NavigateTo(pageType)            : bool
+        +NavigateTo(pageType, parameter) : bool
+    }
+
+    class RoleNavigationService {
+        -_nav : INavigationService
+        +NavigateByRole(user) : bool
+    }
+
+    class EmployeeAccountValidator {
+        +Validate(input) : EmployeeAccountValidationResult
+    }
+
+    class EmployeeScheduleValidator {
+        +Validate(input) : EmployeeScheduleValidationResult
+    }
+
+    class MenuProductValidator {
+        +Validate(input) : MenuValidationResult
+    }
+
+    class ShoppingItemValidator {
+        +Validate(input) : ShoppingValidationResult
+    }
+
+    class OrderFilterService {
+        +FilterOrders(orders, selectedStatus) : List<ChefOrder>
+    }
+
+    class AdminOrderFilterService {
+        +FilterOrders(orders, selectedStatus) : List<AdminOrder>
+    }
+
+    class OrderStatusColorService {
+        +GetStatusColor(status) : SolidColorBrush
+    }
+
+    class AdminOrderStatusColorService {
+        +GetColor(status) : SolidColorBrush
+    }
+
+    class WaiterStatusColorService {
+        +GetStatusColor(status) : SolidColorBrush
+    }
+
+    class ShoppingItemFilterService {
+        +FilterItems(items, filter) : List<ShoppingItem>
+    }
+
+    class OrderLineBuilderService {
+        +BuildOrderLine(menuItem, quantity) : string
+    }
+
+    enum AdminRoute {
+        AdminHome
+        Menu
+        Orders
+        Shopping
+        Employees
+        EmployeesManagement
+        Logout
+    }
+
+    class AdminRouteService {
+        +Navigate(route) : bool
+    }
+
+    class ChefOrderItem {
+        +OrderId     : int
+        +TableNumber : int
+        +WaiterName  : string
+        +Details     : string
+        +Status      : string
+        +SentAt      : string
+        +StatusColor : SolidColorBrush
+    }
+
+    LoginService             ..|> ILoginService
+    FrameNavigationService   ..|> INavigationService
+    RoleNavigationService    ..|> IRoleNavigationService
+    EmployeeAccountValidator ..|> IEmployeeAccountValidator
+    EmployeeScheduleValidator ..|> IEmployeeScheduleValidator
+    MenuProductValidator     ..|> IMenuProductValidator
+    ShoppingItemValidator    ..|> IShoppingItemValidator
+    OrderFilterService       ..|> IOrderFilterService
+    AdminOrderFilterService  ..|> IAdminOrderFilterService
+    OrderStatusColorService  ..|> IOrderStatusColorService
+    AdminOrderStatusColorService ..|> IAdminOrderStatusColorService
+    WaiterStatusColorService ..|> IWaiterStatusColorService
+    ShoppingItemFilterService ..|> IShoppingItemFilterService
+    OrderLineBuilderService  ..|> IOrderLineBuilderService
+
+    LoginService      --> IUserRepository
+    RoleNavigationService --> INavigationService
+    AdminRouteService --> AdminRoute
+}
+
+' ─────────────────────────────────────────────
+'  VIEW MODELS
+' ─────────────────────────────────────────────
+
+package "ViewModels" #FFEEEE {
+
+    class AdminOrderViewModel {
+        +OrderId     : int
+        +TableNumber : int
+        +WaiterName  : string
+        +Details     : string
+        +Status      : string
+        +SentAt      : string
+        +StatusColor : SolidColorBrush
+    }
+
+    class EmployeeAccountViewModel {
+        +Id       : int
+        +Username : string
+        +Password : string
+        +FullName : string
+        +Role     : string
+        +{static} FromModel(e) : EmployeeAccountViewModel
+    }
+
+    class EmployeeScheduleViewModel {
+        +ScheduleId   : int
+        +UserId       : int
+        +EmployeeName : string
+        +Role         : string
+        +WorkDateText : string
+        +StartTimeText: string
+        +EndTimeText  : string
+        +IntervalText : string
+        +Notes        : string
+        +{static} FromModel(s) : EmployeeScheduleViewModel
+    }
+
+    class EmployeeUserViewModel {
+        +UserId      : int
+        +FullName    : string
+        +Role        : string
+        +DisplayName : string
+        +{static} FromModel(e) : EmployeeUserViewModel
+    }
+
+    class MenuProductViewModel {
+        +MenuId      : int
+        +Name        : string
+        +Category    : string
+        +Price       : decimal
+        +IsAvailable : bool
+        +PriceText   : string
+        +AvailabilityText : string
+        +{static} FromModel(p) : MenuProductViewModel
+        +ToModel() : MenuProduct
+    }
+
+    class ShoppingItemViewModel {
+        +ShoppingItemId : int
+        +Name           : string
+        +Quantity       : decimal
+        +Unit           : string
+        +IsPurchased    : bool
+        +CreatedAt      : string
+        +QuantityText   : string
+        +StatusText     : string
+        +StatusColor    : SolidColorBrush
+        +{static} FromModel(i) : ShoppingItemViewModel
+    }
+
+    class WaiterMenuItemViewModel {
+        +MenuId      : int
+        +Name        : string
+        +Category    : string
+        +Price       : decimal
+        +IsAvailable : bool
+        +Quantity    : int
+        +PriceText   : string
+        +{static} FromModel(i) : WaiterMenuItemViewModel
+        +ToModel() : RestaurantMenuItem
+    }
+
+    class WaiterOrderItemViewModel {
+        +OrderId     : int
+        +TableNumber : int
+        +Details     : string
+        +Status      : string
+        +SentAt      : string
+        +StatusColor : SolidColorBrush
+    }
+
+    AdminOrderViewModel      --> AdminOrder
+    EmployeeAccountViewModel --> EmployeeAccount
+    EmployeeScheduleViewModel --> EmployeeSchedule
+    MenuProductViewModel     --> MenuProduct
+    ShoppingItemViewModel    --> ShoppingItem
+    WaiterMenuItemViewModel  --> RestaurantMenuItem
+    WaiterOrderItemViewModel --> WaiterOrder
+}
+
+' ─────────────────────────────────────────────
+'  DATA / INFRASTRUCTURE
+' ─────────────────────────────────────────────
+
+package "Data" #EEEEFF {
+
+    class DbHelper <<static>> {
+        +{static} FindDatabaseFile() : string
+        +{static} GetConnection()    : SqlConnection
+    }
+
+    SqlUserRepository             --> DbHelper
+    SqlAdminOrderRepository       --> DbHelper
+    SqlOrderRepository            --> DbHelper
+    SqlWaiterRepository           --> DbHelper
+    SqlEmployeeAccountRepository  --> DbHelper
+    SqlEmployeeScheduleRepository --> DbHelper
+    SqlMenuRepository             --> DbHelper
+    SqlShoppingListRepository     --> DbHelper
+}
+
+' ─────────────────────────────────────────────
+'  VIEWS
+' ─────────────────────────────────────────────
+
+package "Views" #FAFAF0 {
+
+    class MainWindow {
+        +{static} Instance : MainWindow
+        +AppFrame : Frame
+    }
+
+    class App {
+        +OnLaunched() : void
+    }
+
+    class LoginPage {
+        -_loginService  : ILoginService
+        -_roleNavService: IRoleNavigationService
+        +LoginButton_Click() : void
+    }
+
+    class AdminHomePage {
+        -_routeService : AdminRouteService
+        +AdminButton_Click() : void
+    }
+
+    class DashboardPage {
+        -_routeService : AdminRouteService
+        +BackButton_Click() : void
+    }
+
+    class WaiterPage {
+        -_waiterRepo       : IWaiterRepository
+        -_lineBuilder      : IOrderLineBuilderService
+        -_statusColors     : IWaiterStatusColorService
+        -_navService       : INavigationService
+        -menuItems         : ObservableCollection<WaiterMenuItemViewModel>
+        -orders            : ObservableCollection<WaiterOrderItemViewModel>
+        +OnNavigatedTo()        : void
+        +LoadMenu()             : void
+        +LoadOrders()           : void
+        +AddMenuItemToOrder_Click()  : void
+        +SendOrderButton_Click() : void
+        +RefreshButton_Click()  : void
+        +LogoutButton_Click()   : void
+    }
+
+    class KitchenChefPage {
+        -_orderRepo    : IOrderRepository
+        -allOrders     : List<ChefOrder>
+        +ApplyFilter()              : void
+        +ChangeStatusButton_Click() : void
+        +RefreshButton_Click()      : void
+        +LogoutButton_Click()       : void
+    }
+
+    class MenuManagementPage {
+        -_menuRepo      : IMenuRepository
+        -_validator     : IMenuProductValidator
+        -menuItems      : ObservableCollection<MenuProductViewModel>
+        +LoadMenu()             : void
+        +SaveButton_Click()     : void
+        +EditButton_Click()     : void
+        +DeleteButton_Click()   : void
+        +ClearForm()            : void
+    }
+
+    class EmployeeManagementPage {
+        -_accountRepo  : IEmployeeAccountRepository
+        -_validator    : IEmployeeAccountValidator
+        -employees     : ObservableCollection<EmployeeAccountViewModel>
+        +LoadEmployees()        : void
+        +SaveButton_Click()     : void
+        +EditButton_Click()     : void
+        +DeleteButton_Click()   : void
+        +ClearForm()            : void
+    }
+
+    class EmployeeSchedulePage {
+        -_scheduleRepo : IEmployeeScheduleRepository
+        -_validator    : IEmployeeScheduleValidator
+        -schedules     : ObservableCollection<EmployeeScheduleViewModel>
+        -employeeUsers : ObservableCollection<EmployeeUserViewModel>
+        +LoadEmployees()        : void
+        +LoadSchedules()        : void
+        +SaveButton_Click()     : void
+        +EditButton_Click()     : void
+        +DeleteButton_Click()   : void
+    }
+
+    class ShoppingListPage {
+        -_shoppingRepo : IShoppingListRepository
+        -_validator    : IShoppingItemValidator
+        -_filterService: IShoppingItemFilterService
+        -allItems      : List<ShoppingItem>
+        -visibleItems  : ObservableCollection<ShoppingItemViewModel>
+        +LoadItems()                  : void
+        +ApplyFilter()                : void
+        +SaveButton_Click()           : void
+        +EditButton_Click()           : void
+        +MarkPurchasedButton_Click()  : void
+        +MarkNeededButton_Click()     : void
+        +DeleteButton_Click()         : void
+        +Filter_Click()               : void
+    }
+
+    class OrderManagementPage {
+        -_orderRepo    : IAdminOrderRepository
+        -_filterService: IAdminOrderFilterService
+        -_colorService : IAdminOrderStatusColorService
+        -allOrders     : List<AdminOrder>
+        -visibleOrders : ObservableCollection<AdminOrderViewModel>
+        +LoadOrders()               : void
+        +ApplyFilter()              : void
+        +ChangeStatusButton_Click() : void
+        +DeleteButton_Click()       : void
+        +RefreshButton_Click()      : void
+    }
+
+    App          --> MainWindow
+    MainWindow   --> LoginPage
+
+    LoginPage    --> ILoginService
+    LoginPage    --> IRoleNavigationService
+
+    AdminHomePage     --> AdminRouteService
+    DashboardPage     --> AdminRouteService
+
+    WaiterPage        --> IWaiterRepository
+    WaiterPage        --> IOrderLineBuilderService
+    WaiterPage        --> IWaiterStatusColorService
+    WaiterPage        --> INavigationService
+
+    KitchenChefPage   --> IOrderRepository
+
+    MenuManagementPage      --> IMenuRepository
+    MenuManagementPage      --> IMenuProductValidator
+
+    EmployeeManagementPage  --> IEmployeeAccountRepository
+    EmployeeManagementPage  --> IEmployeeAccountValidator
+
+    EmployeeSchedulePage    --> IEmployeeScheduleRepository
+    EmployeeSchedulePage    --> IEmployeeScheduleValidator
+
+    ShoppingListPage        --> IShoppingListRepository
+    ShoppingListPage        --> IShoppingItemValidator
+    ShoppingListPage        --> IShoppingItemFilterService
+
+    OrderManagementPage     --> IAdminOrderRepository
+    OrderManagementPage     --> IAdminOrderFilterService
+    OrderManagementPage     --> IAdminOrderStatusColorService
+}
+
+@enduml
