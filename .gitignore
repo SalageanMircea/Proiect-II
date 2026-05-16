@@ -8,10 +8,6 @@
 bin/
 obj/
 
-# SQL Server database files (it could be changed later)
-*.mdf
-*.ldf
-
 # Local settings
 *.json.user
 launchSettings.json
