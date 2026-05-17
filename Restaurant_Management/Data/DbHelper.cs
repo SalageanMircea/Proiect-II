@@ -9,7 +9,7 @@ namespace Restaurant_Management.Data
     public static class DbHelper
     {
         private static readonly string connectionString;
-        private const string InstanceName = "ResLocalDB";
+        private const string InstanceName = "RestaurantLocalDB";
 
         static DbHelper()
         {
@@ -24,7 +24,7 @@ namespace Restaurant_Management.Data
 
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-            builder.DataSource = @"(LocalDB)\RestaurantLocalDB";
+            builder.DataSource = $@"(LocalDB)\{InstanceName}";
             builder.AttachDBFilename = databasePath;
             builder.IntegratedSecurity = true;
             builder.ConnectTimeout = 30;
@@ -71,6 +71,7 @@ namespace Restaurant_Management.Data
 
             using var process = Process.Start(psi)!;
             string output = process.StandardOutput.ReadToEnd();
+            string error = process.StandardError.ReadToEnd();
             process.WaitForExit();
             return output;
         }
