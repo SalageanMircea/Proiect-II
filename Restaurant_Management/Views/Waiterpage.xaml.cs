@@ -133,7 +133,7 @@ namespace Restaurant_Management.Views
             }
         }
 
-        private void AddMenuItemToOrder_Click(object sender, RoutedEventArgs e)
+        private async void AddMenuItemToOrder_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
 
@@ -150,12 +150,16 @@ namespace Restaurant_Management.Views
                 return;
             }
 
-            int quantity = Convert.ToInt32(selectedItem.Quantity);
-
-            if (quantity < 1)
+            if (double.IsNaN(selectedItem.Quantity))
             {
-                quantity = 1;
+                await ShowDialog("Eroare", "Cantitate invalida. Valoarea trebuie sa fie intre 1 si 50.");
+                return;
             }
+
+            int quantity = selectedItem.Quantity < 1
+                ? 1
+                : Convert.ToInt32(selectedItem.Quantity);
+
 
             RestaurantMenuItem menuItem = selectedItem.ToModel();
 
@@ -163,6 +167,14 @@ namespace Restaurant_Management.Views
                 orderLineBuilderService.BuildOrderLine(menuItem, quantity);
 
             AddTextToOrderBox(orderLine);
+        }
+
+        private void QuantityNumberBox_ValueChanged(NumberBox sender, NumberBoxValueChangedEventArgs args)
+        {
+            if (double.IsNaN(sender.Value))
+            {
+                sender.Value = 1;
+            }
         }
 
         private void AddTextToOrderBox(string text)
@@ -184,6 +196,12 @@ namespace Restaurant_Management.Views
             if (string.IsNullOrWhiteSpace(details))
             {
                 await ShowDialog("Eroare", "Selecteaza produse din meniu.");
+                return;
+            }
+
+            if (double.IsNaN(TableNumberBox.Value))
+            {
+                await ShowDialog("Eroare", "Introduceti un numar de masa valid intre 1 si 50.");
                 return;
             }
 

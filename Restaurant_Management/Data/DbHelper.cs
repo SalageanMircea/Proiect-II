@@ -40,7 +40,6 @@ namespace Restaurant_Management.Data
         }
         private static void EnsureLocalDbInstanceExists(string instanceName)
         {
-            // Lekérjük a meglévő instance-okat
             string existingInstances = RunSqlLocalDb("info");
 
             bool instanceExists = existingInstances
@@ -52,7 +51,6 @@ namespace Restaurant_Management.Data
                 RunSqlLocalDb($"create \"{instanceName}\"");
             }
 
-            // Mindenképp indítsuk el (ha már fut, nem dob hibát)
             RunSqlLocalDb($"start \"{instanceName}\"");
         }
 
